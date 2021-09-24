@@ -1,0 +1,92 @@
+*{
+    box-sizing:border-box
+}
+.banner{
+    text-align:center;
+    color:#f3f6f5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:lighter
+}
+.hero-banner{
+    display:inline-block;
+    background-position: center;
+    background-size: cover;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)),url(/images/banners/hero-home.jpg);
+    width:100%;
+    padding-top:6rem;
+    padding-bottom:10.5rem;
+}
+
+.hero-h2{
+    margin:4rem 2rem .5rem 2rem;
+    font-size:1.6rem;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:lighter
+}
+.banner-p{
+    font-size:1.4rem;
+    margin:.5rem 1.25rem 2.5rem 1.25rem;
+    line-height:1.5;
+    
+}
+.sign-up-btn{
+    border:#09a38c solid;
+    padding:.75rem 2.75rem .75rem 2.75rem;
+    text-decoration:none;
+    text-align:center;
+    color:#09a38c;
+    margin-top:1rem;
+    border-radius:2rem;
+    border-width:2px;
+    font-size:1.35rem;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.sign-up-btn:hover{
+    background-color:#f3f6f5;
+}
+.sign-up-btn:active{
+    background-color: rgb(165, 165, 165);
+    border:solid #f3f6f5;
+    color:#f3f6f5
+}
+.call-to-action-banner{
+    display:inline-block;
+    background-position: center;
+    background-size: cover;
+    background-image:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)) ,url(/images/banners/soccer-banner-bw.jpg);
+    width:100%;
+    padding-top:3rem;
+    padding-bottom:6.5rem;
+    }
+.call-to-action-h2{
+    margin:2.5rem 2rem 2rem 2rem;
+    font-size:1.5rem;
+    font-weight:lighter;
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform:uppercase;
+
+}
+.sign-up-btn-2{
+    border:#f3f6f5 solid;
+    padding:.75rem 2.75rem .75rem 2.75rem;
+    text-decoration:none;
+    text-align:center;
+    color:#f3f6f5;
+    margin-top:2rem;
+    border-radius:2rem;
+    border-width:2px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:1.35rem;
+    font-weight:lighter;
+}
+.sign-up-btn-2:hover{
+    background-color:#f3f6f5;
+    color:#09a38c;
+    border:solid #09a38c
+}
+.sign-up-btn-2:active{
+    background-color:rgb(165, 165, 165) ;
+    color:#f3f6f5;
+    border:solid #f3f6f5;
+}
