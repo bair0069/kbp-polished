@@ -11,6 +11,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #000000;
+  margin-top:0%
 }
 
 p {margin-bottom: 1rem;}
@@ -23,7 +24,9 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  margin-top: 0;
+  padding-top:0%;
+  margin-top: 0%;
+  margin-bottom:.5rem;
   font-size: 1.802rem;
   text-align: center;
   color:#066051;
@@ -65,5 +68,6 @@ a{
 small{font-size: 0.889rem;}
 
 .container{
+  padding-left:.5rem;
   max-width:40em;
 }
