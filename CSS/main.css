@@ -1,5 +1,5 @@
-*{
-    box-sizing:border-box
+html{
+    box-sizing:border-box;
 }
 .banner{
     text-align:center;
@@ -89,4 +89,39 @@
     background-color:rgb(165, 165, 165) ;
     color:#f3f6f5;
     border:solid #f3f6f5;
+}
+
+.brand-platform-section{
+    display:inline-block;
+    text-align: center;
+    width:100%;
+    margin-top:5rem;
+    margin-bottom:5rem;
+}
+.brand-platform-container{
+    display:inherit;
+    width:100%;
+    max-width:40rem;
+    
+    
+}
+.brand-platform-banner{
+    display:inherit;
+    color:black;
+    text-transform:uppercase;
+    margin:0 .75rem 1.5rem .75rem;
+    padding:0 auto;
+}
+.brand-platform-p{
+    font-family:sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.45;
+    margin:0rem 1rem 1.5rem 1rem;
+
+}
+.brand-platform-image{
+    width:95%;
+    
+
+    
 }
