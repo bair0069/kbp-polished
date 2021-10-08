@@ -1,44 +1,105 @@
-html{
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+/* ----------------------------------------imports go above--------------------------------- */
+
+
+html {
     box-sizing:border-box;
 }
-*,*::after,*::before{
+
+*,*::after,*::before {
     box-sizing:inherit;
 }
-img{
-    max-width:100%;
-}
-/* This is the first instance of the banner class */
-.banner{
-    display:inline-block;
-    text-align:center;
-    color:#f3f6f5;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight:lighter;
-    background-position: center;
-    background-size: cover;
-    width:100%;
-    
-}
-/* this is the baseball player banner */
-.hero-banner{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)),url(/images/banners/hero-home.jpg);
-    padding-top:6rem;
-    padding-bottom:9.5rem;
+
+body {
+    background: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    margin-top:0%;
+    margin:0%;
 }
 
-.hero-h2{
-    margin:4rem 0rem .5rem 0rem;
-    font-size:1.6rem;
+img {
+    max-width:100%;
+}
+
+
+/* ------------------------------------this is where the mobile type scale is set------------------ */
+
+
+html {
+    font-size:100%;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 1rem 0 1.38rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+h1 {
+    padding-top:0%;
+    margin-top: 0%;
+    margin-bottom:.5rem;
+    font-size: 1.802rem;
+    text-align: center;
+    color:#066051;
     text-transform: uppercase;
 }
-.banner-p{
-    font-size:1.4rem;
-    margin:.5rem 1.25rem 2.5rem 1.25rem;
-    line-height:1.5;
-    
+
+h2 {
+    font-size: 1.602rem;
+    text-transform: uppercase;
 }
-/* This is the first instance of the button class */
-.sign-up-btn{
+
+h3 {
+    font-size: 1.424rem;
+    font-weight: 900;
+}
+
+h4 {
+    font-size: 1.266rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+h5 {font-size: 1.125rem;
+    border-bottom: solid .045rem #e9eceb;
+    color:#066051;
+    font-weight: 700;
+}
+
+h6,p {
+    font-size: 1rem;
+    font-weight: normal; 
+    text-transform: uppercase;
+    margin-top:0;
+    margin-bottom:1.5rem;
+}
+
+p {
+    text-transform: none;
+}
+
+a {
+    color:#066051;
+    text-decoration:underline;
+}
+
+small, .text_small {
+    font-size: 0.889rem;
+}
+
+
+
+/* ----------------this is where the general button classes are defined-------------------- */
+
+
+.sign-up-btn {
     padding:.75rem 2.75rem .75rem 2.75rem;
     text-decoration:none;
     text-align:center;
@@ -48,83 +109,479 @@ img{
     font-family:Arial, Helvetica, sans-serif;
 }
 
-/* this is the #09a38c sign-up button */
-.btn-green{
+.small-btn {
+    border-width:2px;
+    margin-top: 0px;
+    padding:.45rem 1.6rem .45rem 1.6rem;
+    font-weight: lighter;
+    font-size: .9rem;
+    border-radius:2rem;
+}
+
+
+/* ----------------------This is where the banner class is defined -----------------------------*/
+
+
+.banner {
+    display:inline-block;
+    text-align:center;
+    color:#f3f6f5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:lighter;
+    background-position: center;
+    background-size: cover;
+    width:100%;
+}    
+
+
+/* ------------------------this is where the container class is defined---------------------- */
+
+
+.container {
+    padding-left:.5rem;
+    max-width:40em;
+}
+
+
+/* ---------------this is where the nav bar and header are styled-------------- */
+
+
+.polished {
+    max-width:9.5rem;
+}
+
+.header {
+    width:100%;
+    text-align:center;
+    padding: 0rem 5.5rem .2rem 5.5rem;
+}    
+
+nav ul, nav ul li a {
+    line-height: 2.2rem;
+    color:#066051;
+    list-style-type:none;
+    padding-left:0%;
+    font-size:.83rem;
+    font-weight: lighter;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    width:100%;
+}    
+
+
+/* -------this is the primary -green #066051 sign up button----- */
+
+
+.btn-pri-green {
+    border:solid #066051;
+    border-width:2px;
+}
+
+.btn-pri-green:hover {
+    background-color:#f3f6f5;
+}
+
+.btn-pri-green:active {
+    background-color: rgb(165, 165, 165);
+    border:solid #f3f6f5;
+    color:#f3f6f5
+}
+
+
+/*--------------------------- this is the baseball player banner---------------------------- */
+
+
+.hero-banner {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)),url(/images/banners/hero-home.jpg);
+    padding-top:6rem;
+    padding-bottom:9.5rem;
+}
+
+.hero-h2 {
+    margin:4rem 0rem .5rem 0rem;
+    font-size:1.6rem;
+    text-transform: uppercase;
+}
+
+.banner-p {
+    font-size:1.4rem;
+    margin:.5rem 0rem 2.5rem 0rem;
+    line-height:1.5;
+}
+
+
+/* ---------------this is the #09a38c btn-lgt-green sign-up button------------ */
+
+
+.btn-lgt-green {
     border:#09a38c solid;
     color:#09a38c;
     margin-top:1rem;
     
 }
-.btn-green:hover{
+
+.btn-lgt-green:hover {
     background-color:#f3f6f5;
 }
-.btn-green:active{
+
+.btn-lgt-green:active {
     background-color: rgb(165, 165, 165);
     border:solid #f3f6f5;
     color:#f3f6f5
 }
-/* this is the banner with the soccer players */
-.call-to-action-banner{
+
+
+/*-----------------------this is the banner with the soccer players-----------------------------*/
+
+
+.call-to-action-banner {
     background-image:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)) ,url(/images/banners/soccer-banner-bw.jpg);
     padding-top:3rem;
     padding-bottom:6.5rem;
 }
-.call-to-action-h2{
+
+.call-to-action-h2 {
     margin:2.5rem 0rem 2rem 0rem;
     font-size:1.5rem;
     text-transform:uppercase;
     
 }
 
-.btn-white{
+
+/* -------------------this is the btn- white sign-up button-------------------------------- */
+
+
+.btn-white {
     border:#f3f6f5 solid;
     color:#f3f6f5;
     margin-top:2rem;
     
 }
-.btn-white:hover{
+
+.btn-white:hover {
     background-color:#f3f6f5;
     color:#09a38c;
     border:solid #09a38c
 }
-.btn-white:active{
+
+.btn-white:active {
     background-color:rgb(165, 165, 165) ;
     color:#f3f6f5;
     border:solid #f3f6f5;
 }
 
 
-.brand-platform{
+/*-------------------------this is the brand creation platform --------------------------*/
+
+.brand-platform {
     display:inline-block;
     text-align: center;
     width:100%;
     color:black;
     font-family:sans-serif;
 }
-.platform-section{
+
+.platform-section {
     margin-top:5rem;
     margin-bottom:5rem;
 }
-.platform-container{
+
+.platform-container {
     width:100%;
     max-width:40rem;
-    
-    
 }
-.platform-banner{
+
+.platform-banner {
     display:inherit;
     font-weight: normal;
     text-transform:uppercase;
-    margin:0 .75rem 1.5rem .75rem;
-    padding:0 auto;
+    padding:0 .75rem 0rem .75rem;
 }
-.platform-p{
+
+.platform-p {
     font-family:sans-serif;
     font-size: 1.15rem;
     line-height: 1.45;
-    margin:0rem 1rem 1.5rem 1rem;
+    padding:0rem 1rem 0rem 1rem;
+}
+
+.platform-image {
+    width:95%;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+
+/* --------------------------------this is the footer-------------------------------- */
+
+
+.footer-banner {
+    background-color:#066e5d;
+    padding:1rem 4rem 1.5rem 4rem;
+    width:100%;
+}
+
+.small-footer {
+    width:100%;
+    background-color: #034e43;
+    padding:1rem 2rem 1rem 2rem;
+    
+}
+
+.footer-btn {
+margin:0;
+border-width:2px;
+float:unset
+}
+
+.polished-white {
+margin-bottom:2rem;
+}
+
+.legal-stuff {
+    list-style-type: none;
+    font-size:.75rem;
+}
+
+footer ul li a {
+    color:white
+}
+
+.copyright {
+    padding-top: 1rem;
+    font-size: 0.75rem;
+}
+
+.col.privacy-policy {
+    float:left;
+    padding-right:1rem;
+}
+
+.col.terms {
+    float:left;
+    
+}
+
+
+/* ----------------------this is where adaptive media queries are set ------------------ */
+
+
+@media only screen and (min-width:45em) {
+    
+/*------------------------- tablet adaptive type scale----------------------------- */
+
+
+html {
+    font-size:100%
+}
+
+h1 {
+    padding-top:0%;
+    margin-top: 0%;
+    margin-bottom:.5rem;
+    font-size: 2.488rem;
+    text-align: center;
+    color:#066051;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2.074rem;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.728rem;
+    font-weight: 900;
+}
+
+h4 {
+    font-size: 1.44rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+h5 {font-size: 1.125rem;
+    border-bottom: solid .045rem #e9eceb;
+    color:#066051;
+    font-weight: 700;
+}
+
+h6,p {
+    font-size: 1rem;
+    font-weight: normal; 
+    text-transform: uppercase;
+    margin-top:0;
+    margin-bottom:1.5rem;
+}
+
+p {
+    text-transform: none;
+}
+
+a {
+    color:#066051;
+    text-decoration:underline;
+}
+
+small, .text_small {
+    font-size: 0.833rem;
+}
 
 }
-.platform-image{
-    width:95%;
+
+
+@media only screen and (min-width:60em) {
+
+/*---------------------------laptop adaptive type scale ---------------------- */
+
+
+html {
+    font-size:100%;
+}
+
+h1 {
+    padding-top:0%;
+    margin-top: 0%;
+    margin-bottom:.5rem;
+    font-size: 3.052rem;
+    text-align: center;
+    color:#066051;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2.441rem;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.953rem;
+    font-weight: 900;
+}
+
+h4 {
+    font-size: 1.563rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+h5 {font-size: 1.25rem;
+    border-bottom: solid .045rem #e9eceb;
+    color:#066051;
+    font-weight: 700;
+}
+
+h6,p {
+    font-size: .8rem;
+    font-weight: normal; 
+    text-transform: uppercase;
+    margin-top:0;
+    margin-bottom:1.5rem;
+}
+
+p {
+    text-transform: none;
+}
+
+a {
+    color:#066051;
+    text-decoration:underline;
+}
+
+small {
+    font-size: 0.8rem;
+}
+
+
+/*-------------------- this is where adaptive the header is styled--------------------*/
+
+
+.header {
+    padding:.5rem 11rem 1rem 10.8rem
+}
+
+.col.logo.polished {
+    max-width:9.5rem;
+    padding-left:0.3rem;
+    padding-right:.3rem;
+}
+
+.polished {
+    padding-top:1rem;
+    margin-right:1rem;
+}
+        
+.row { 
+    overflow: hidden;
+}
+
+.col {
+    float:left;
+    padding-left:1.5rem;
+}
+
+.col.tour {
+    float:left;
+    padding:0;
+}
+
+.col.pricing {
+    float:left;
+}
+
+.col.sign-up {
+    float:right;
+    padding-bottom:.25rem;
+    padding-right:1rem;
+}
+
+.col.sign-in {
+    float:right;
+    padding:0;
+}
+
+
+/* <--------------------this is where the adaptive footer is styled ---------------------> */
+
+
+.polished-white {
+    max-width:10.5rem;
+    padding-left:0%;
+    padding-top:0%;
+}
+
+.footer-banner {
+    margin-bottom:-1rem;
+    padding: 1.7rem 11.6rem 0rem 11.6rem
+}
+
+.footer-btn {
+    float:right;
+    padding:.3rem 1.6rem .3rem 1.6rem;
+}
+
+.small-footer {
+    padding:1.5rem 11.6rem 1rem 11.6rem;
+    overflow: hidden;
+    width:100%;
+    margin-bottom:-1rem
+}
+
+.legal-stuff {
+    margin:0%;
+    float:right;
+}
+
+.col.terms {
+    padding-left:0;
+}
+
+.copyright {
+    float:left;
+    padding:0;
+}
+
 }
