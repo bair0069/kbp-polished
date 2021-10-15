@@ -110,12 +110,14 @@ small, .text_small {
 }
 
 .small-btn {
-    border-width:2px;
     margin-top: 0px;
-    padding:.45rem 1.6rem .45rem 1.6rem;
+    border-width:1px;
+    padding:.45rem 1.85rem .45rem 1.85rem;
     font-weight: lighter;
-    font-size: .9rem;
+    font-size: 1rem;
     border-radius:2rem;
+    text-decoration:none;
+    min-width:8rem;
 }
 
 
@@ -133,40 +135,35 @@ small, .text_small {
     width:100%;
 }    
 
-
-/* ------------------------this is where the container class is defined---------------------- */
-
-
-.container {
-    padding-left:.5rem;
-    max-width:40em;
-}
-
-
 /* ---------------this is where the nav bar and header are styled-------------- */
 
-
-.polished {
-    max-width:9.5rem;
+.masthead {
+    padding:0.75rem 0;
+    text-align:center;
 }
 
-.header {
-    width:100%;
-    text-align:center;
-    padding: 0rem 5.5rem .2rem 5.5rem;
-}    
+.masthead .logo-wrap {
+    margin-bottom:.75rem;
+}
 
-nav ul, nav ul li a {
-    line-height: 2.2rem;
-    color:#066051;
-    list-style-type:none;
-    padding-left:0%;
-    font-size:.83rem;
-    font-weight: lighter;
-    font-family:Arial, Helvetica, sans-serif;
+.nav ul {
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+
+.nav li {
+    margin-bottom:.75rem;
+}
+
+.nav a {
     text-decoration: none;
-    width:100%;
-}    
+}
+
+.logo {
+    display:inline-block;
+    width:12rem;
+}
 
 
 /* -------this is the primary -green #066051 sign up button----- */
@@ -231,6 +228,20 @@ nav ul, nav ul li a {
 }
 
 
+/* ------------------------team logos are styled here-------------------------------------- */
+
+
+.team-names ul {
+    padding:1.75rem 5.25rem 0.25rem 5.25rem;
+    list-style-type: none;
+    margin:0;
+}
+
+.team-names ul li img {
+    margin-bottom:1.5rem;
+}
+
+
 /*-----------------------this is the banner with the soccer players-----------------------------*/
 
 
@@ -272,6 +283,7 @@ nav ul, nav ul li a {
 
 
 /*-------------------------this is the brand creation platform --------------------------*/
+
 
 .brand-platform {
     display:inline-block;
@@ -316,56 +328,81 @@ p {
 
 /* --------------------------------this is the footer-------------------------------- */
 
-
-.footer-banner {
-    background-color:#066e5d;
-    padding:1rem 4rem 1.5rem 4rem;
-    width:100%;
+.footer {
+    background-color:#066051;
+    text-align:center;
+    color:#fff
 }
 
-.small-footer {
-    width:100%;
-    background-color: #034e43;
-    padding:1rem 2rem 1rem 2rem;
-    
+.footer a {
+    color:#fff
 }
 
-.footer-btn {
-margin:0;
-border-width:2px;
-float:unset
+.footer .container {
+    display:flex;
+    flex-flow:column nowrap;
+    align-items: center;
+    padding:1.5rem;
 }
 
-.polished-white {
-margin-bottom:2rem;
+.footer .logo {
+    margin:0 auto;
+    margin-bottom:.75rem
 }
 
-.legal-stuff {
+.footer .footer-btn {
+    margin:1rem 0rem 0rem 0rem;
+}
+
+.sub-footer {
+    background-color:#044438;
+}
+
+.sub-footer ul{
+    display:flex;
+    flex-direction:row;
     list-style-type: none;
-    font-size:.75rem;
+    margin:0;
+    padding:0;
+    font-size:smaller;
 }
 
-footer ul li a {
-    color:white
+.sub-footer li {
+    padding-left:1.25rem;
 }
-
-.copyright {
-    padding-top: 1rem;
-    font-size: 0.75rem;
-}
-
-.col.privacy-policy {
-    float:left;
-    padding-right:1rem;
-}
-
-.col.terms {
-    float:left;
-    
-}
-
 
 /* ----------------------this is where adaptive media queries are set ------------------ */
+
+@media only screen and (min-width:30em) {
+
+
+.nav {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-evenly;
+}
+
+/* -----------------------large mobile team logos----------------- */
+
+.team-names ul {
+    display:flex;
+    column-gap:1rem;
+    flex-flow:row wrap;
+    justify-content:space-between;
+    width:100%;
+    padding:1rem 3rem;
+}
+
+.team-names li {
+    width:47%;
+    padding:1rem 2rem;
+}
+
+.team-names ul li img {
+    margin-bottom:0%;
+}
+
+}
 
 
 @media only screen and (min-width:45em) {
@@ -378,61 +415,44 @@ html {
 }
 
 h1 {
-    padding-top:0%;
-    margin-top: 0%;
-    margin-bottom:.5rem;
     font-size: 2.488rem;
-    text-align: center;
-    color:#066051;
-    text-transform: uppercase;
 }
 
 h2 {
     font-size: 2.074rem;
-    text-transform: uppercase;
 }
 
 h3 {
     font-size: 1.728rem;
-    font-weight: 900;
 }
 
 h4 {
     font-size: 1.44rem;
-    text-transform: uppercase;
-    font-weight: 900;
 }
 
-h5 {font-size: 1.125rem;
-    border-bottom: solid .045rem #e9eceb;
-    color:#066051;
-    font-weight: 700;
+h5 {
+    font-size: 1.125rem;
 }
 
 h6,p {
     font-size: 1rem;
-    font-weight: normal; 
-    text-transform: uppercase;
-    margin-top:0;
-    margin-bottom:1.5rem;
-}
-
-p {
-    text-transform: none;
-}
-
-a {
-    color:#066051;
-    text-decoration:underline;
 }
 
 small, .text_small {
     font-size: 0.833rem;
 }
 
+
+/* ----------------------tablet adaptive team logo section------------ */
+
+
+.team-names ul {
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-around;
 }
 
-
+}
 @media only screen and (min-width:60em) {
 
 /*---------------------------laptop adaptive type scale ---------------------- */
@@ -443,145 +463,145 @@ html {
 }
 
 h1 {
-    padding-top:0%;
-    margin-top: 0%;
-    margin-bottom:.5rem;
     font-size: 3.052rem;
-    text-align: center;
-    color:#066051;
-    text-transform: uppercase;
 }
-
 h2 {
     font-size: 2.441rem;
-    text-transform: uppercase;
 }
 
 h3 {
     font-size: 1.953rem;
-    font-weight: 900;
 }
 
 h4 {
     font-size: 1.563rem;
-    text-transform: uppercase;
-    font-weight: 900;
 }
 
-h5 {font-size: 1.25rem;
-    border-bottom: solid .045rem #e9eceb;
-    color:#066051;
-    font-weight: 700;
+h5 {
+    font-size: 1.25rem;
 }
 
 h6,p {
     font-size: .8rem;
-    font-weight: normal; 
-    text-transform: uppercase;
-    margin-top:0;
-    margin-bottom:1.5rem;
-}
-
-p {
-    text-transform: none;
-}
-
-a {
-    color:#066051;
-    text-decoration:underline;
 }
 
 small {
     font-size: 0.8rem;
+} 
+
+
+/*-------------------- this is where the laptop adaptive the header is styled--------------------*/
+
+
+.masthead {
+    padding:0rem 14rem .5rem 14rem;
 }
 
 
-/*-------------------- this is where adaptive the header is styled--------------------*/
-
-
-.header {
-    padding:.5rem 11rem 1rem 10.8rem
+.masthead .container {
+    display:flex;
+    flex-flow:row nowrap;
+    flex-grow:1;
+    align-items:center;
 }
 
-.col.logo.polished {
-    max-width:9.5rem;
-    padding-left:0.3rem;
-    padding-right:.3rem;
+.masthead .logo-wrap{
+    margin:0;   
 }
 
-.polished {
-    padding-top:1rem;
-    margin-right:1rem;
-}
-        
-.row { 
-    overflow: hidden;
+.logo {
+    max-width:12rem;
+    margin-right:2rem;
+}    
+
+.nav {
+    justify-content:flex-start;
+    flex-grow:1;
+    align-items: center;
 }
 
-.col {
-    float:left;
-    padding-left:1.5rem;
+.nav ul{
+    display:flex;
+    flex-flow:row nowrap;
+    flex-grow:1;
+    align-items: center;
+
+}
+.nav li {
+    display:flex;
+    align-items: center;
+    padding-left:1rem;
+    margin-bottom:0;
+    min-width:5rem;
 }
 
-.col.tour {
-    float:left;
+#platform-tour {
+    min-width:8rem;
+}
+
+.nav .sign-in {
+    margin-left:auto;
+}
+
+.nav .sign-up {
+    margin-left:0;
+    padding-left:0;
+}
+
+
+/* ----------------------------laptop team logos adaptive section---------------------- */
+
+
+.team-names ul {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    padding:1.75rem 2rem;
+    padding-right:0rem;
+}
+
+.team-names li {
+    text-align:center;
     padding:0;
 }
 
-.col.pricing {
-    float:left;
-}
-
-.col.sign-up {
-    float:right;
-    padding-bottom:.25rem;
-    padding-right:1rem;
-}
-
-.col.sign-in {
-    float:right;
-    padding:0;
+.team-names ul li img {
+    width:50%;
 }
 
 
 /* <--------------------this is where the adaptive footer is styled ---------------------> */
 
-
-.polished-white {
-    max-width:10.5rem;
-    padding-left:0%;
-    padding-top:0%;
+.footer .container {
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    flex-grow:1;
+    align-items:center;
+    padding:1.5rem 15rem 1.25rem 13.5rem;
 }
 
-.footer-banner {
-    margin-bottom:-1rem;
-    padding: 1.7rem 11.6rem 0rem 11.6rem
+.small-btn .btn-white .footer-btn {
+    margin:0 0;
 }
 
-.footer-btn {
-    float:right;
-    padding:.3rem 1.6rem .3rem 1.6rem;
+.footer .logo {
+    display: flex;
+    margin:0 0;
+    margin-bottom:0;
 }
 
-.small-footer {
-    padding:1.5rem 11.6rem 1rem 11.6rem;
-    overflow: hidden;
-    width:100%;
-    margin-bottom:-1rem
-}
-
-.legal-stuff {
-    margin:0%;
-    float:right;
-}
-
-.col.terms {
-    padding-left:0;
-}
-
-.copyright {
-    float:left;
+.sub-footer ul{
+    list-style-type: none;
+    margin:0;
     padding:0;
+    font-size:smaller;
+    
 }
+
+.sub-footer li {
+    padding-left:1.25rem;
+}
+
 
 }

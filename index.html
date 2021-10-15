@@ -10,20 +10,27 @@
     <title>Polished</title>
 </head>
 <body>
-    <header class="header" >       
-        
-            <div class="row">
-                <h1>
-                    <a  href ="./">
-                        <img class="col logo polished" src="/images/logos/logo-polished-color.svg" alt= "Polished">
+    <header class="masthead" >       
+        <div class="container">
+                <h1 class="logo-wrap">
+                    <a  href ="./" class="logo">
+                        <img src="/images/logos/logo-polished-color.svg" alt= "Polished">
                     </a>
                 </h1>
-                <nav>
+                <nav id="nav" class="nav">
                     <ul>
-                        <li class="col tour"><a href="#">Platform Tour</a></li>
-                        <li class="col pricing"><a href="#">Pricing</a></li>
-                        <li class="col sign-in"><a href="#">Sign In</a></li>
-                        <li class="col sign-up"><a class="small-btn btn-pri-green" href="#">Sign Up</a></li>
+                        <li id="platform-tour" >
+                            <a  href="#">Platform Tour</a>
+                        </li>
+                        <li>
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li class="sign-in">
+                            <a href="#">Sign In</a>
+                        </li>
+                        <li class="sign-up">
+                            <a class="small-btn btn-pri-green" href="#">Sign Up</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -42,7 +49,7 @@
                     <a class="sign-up-btn btn-lgt-green" href="./">Sign Up</a>
             </div>
         </section>
-        <section class="list team-names">
+        <section class="team-names">
             <ul>
                 <li><img src="/images/logos/logo-ns.svg" alt="north star"></li>
                 <li><img src="/images/logos/logo-tt.svg" alt="top table"></li>
@@ -76,17 +83,18 @@
 
     </main>
 
-    <footer>
-        <div class="row banner footer-banner">
-            <a  href="./"><img class="col polished polished-white" src="/images/logos/logo-polished-white.svg" alt="Polished white"></a>
-            <a class=" col sign-up-btn small-btn btn-white footer-btn" href="./">Sign Up</a>
+    <footer class="footer">
+        <div class="container">
+            <a  href="./" class="logo"><img src="/images/logos/logo-polished-white.svg" alt="Polished white"></a>
+            <a class="small-btn btn-white footer-btn" href="./">Sign Up</a>
         </div>
-        <div class="row banner small-footer">
-            <small class="copyright">&copy 2021 Algonquin College</small>
-            <ul class="legal-stuff">
-                <li class="col privacy-policy"><a href="#">Privacy Policy</a></li>
-                <li class="col terms"><a href="#">Terms of Service</a></li>
-            </ul>
+        <div class=" container sub-footer">
+            
+            <small>&copy 2021 Algonquin College</small>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
         </div>
     </footer>
 </body>
