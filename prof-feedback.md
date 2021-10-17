@@ -50,3 +50,12 @@ Total: 4.5/5
 
 - Apply the `.container` class we created in class to the row to help create a more consistent layout. You are setting individual paddings on the header and footer, which is both inconsistent and extra repeated code from the `.container` class.
 - Make sure you are double checking all the screen sizes. There are some alignment issues at the 360px with the button in the footer.
+
+## Week 6 ----------------------
+
+Code Quality: 2.75/3
+Design: 1/1
+File Organization & Commits: 1/1
+Total: 4.75/5
+
+- You've added the `.container` class, but you are not using it as a flexible container! Instead of setting specific padding values, use a `max-width` in combination with `margin: 0 auto;` to center things.
