@@ -73,8 +73,8 @@ h5 {font-size: 1.125rem;
     font-weight: 700;
 }
 
-h6,p {
-    font-size: 1rem;
+h6{
+    font-size: 1.3rem;
     font-weight: normal; 
     text-transform: uppercase;
     margin-top:0;
@@ -82,7 +82,11 @@ h6,p {
 }
 
 p {
+    font-size:1.3rem;
     text-transform: none;
+    font-weight: normal;
+    font-family: "Ubuntu",sans-serif;
+
 }
 
 a {
@@ -94,38 +98,16 @@ small, .text_small {
     font-size: 0.889rem;
 }
 
+/* - - - - - - - - - - - - - - - - - - - - - Re-Usable Classes (alphabetical order by type)- - - - - - - - - - - - - - - - - - - -  */
 
 
-/* ----------------this is where the general button classes are defined-------------------- */
 
+/* ----------------------                 Banners                 -----------------------------*/
 
-.sign-up-btn {
-    padding:.75rem 2.75rem .75rem 2.75rem;
-    text-decoration:none;
-    text-align:center;
-    border-radius:2rem;
-    border-width:2px;
-    font-size:1.35rem;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-.small-btn {
-    margin-top: 0px;
-    border-width:1px;
-    padding:.45rem 1.85rem .45rem 1.85rem;
-    font-weight: lighter;
-    font-size: 1rem;
-    border-radius:2rem;
-    text-decoration:none;
-    min-width:8rem;
-}
-
-
-/* ----------------------This is where the banner class is defined -----------------------------*/
 
 
 .banner {
-    display:inline-block;
+    display:flex;
     text-align:center;
     color:#f3f6f5;
     font-family: Arial, Helvetica, sans-serif;
@@ -135,38 +117,58 @@ small, .text_small {
     width:100%;
 }    
 
-/* ---------------this is where the nav bar and header are styled-------------- */
-
-.masthead {
-    padding:0.75rem 0;
-    text-align:center;
+.banner p {
+    font-size:1.5rem;
+    line-height:1.5;
+    margin: 0 0 1rem 0;
 }
 
-.masthead .logo-wrap {
-    margin-bottom:.75rem;
+.banner-header{
+    display:flex;
+    align-self: center;
+    text-transform: uppercase;
+    line-height:1.15;
 }
 
-.nav ul {
-    list-style-type: none;
-    padding:0;
-    margin:0;
-}
-
-.nav li {
-    margin-bottom:.75rem;
-}
-
-.nav a {
-    text-decoration: none;
-}
-
-.logo {
-    display:inline-block;
-    width:12rem;
+.banner .container{
+    padding: 5rem 1.2rem;
 }
 
 
-/* -------this is the primary -green #066051 sign up button----- */
+/*-----------------------call to action banner-----------------------------*/
+
+
+.call-to-action {
+    background-image:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)) ,url(/images/banners/soccer-banner-bw.jpg);
+}
+
+
+
+/* ------------------------------                 Buttons      ------------------------------------------------ */
+
+
+
+
+/* ---------------light-green #09a38c sign-up button------------ */
+
+
+.btn-lgt-green {
+    border:#09a38c solid;
+    color:#09a38c;
+}
+
+.btn-lgt-green:hover {
+    background-color:#f3f6f5;
+}
+
+.btn-lgt-green:active {
+    background-color: rgb(165, 165, 165);
+    border:solid #f3f6f5;
+    color:#f3f6f5
+}
+
+
+/* --------------primary -green #066051 sign up button---------------- */
 
 
 .btn-pri-green {
@@ -185,88 +187,40 @@ small, .text_small {
 }
 
 
-/*--------------------------- this is the baseball player banner---------------------------- */
+
+/* -------------------------sign up button -------------------- */
 
 
-.hero-banner {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)),url(/images/banners/hero-home.jpg);
-    padding-top:6rem;
-    padding-bottom:9.5rem;
-}
-
-.hero-h2 {
-    margin:4rem 0rem .5rem 0rem;
-    font-size:1.6rem;
-    text-transform: uppercase;
-}
-
-.banner-p {
-    font-size:1.4rem;
-    margin:.5rem 0rem 2.5rem 0rem;
-    line-height:1.5;
+.sign-up-btn {
+    padding:.75rem 3rem .75rem 3rem;
+    text-decoration:none;
+    text-align:center;
+    border-radius:2rem;
+    border-width:1px;
+    font-size:1.35rem;
+    font-family:"Ubuntu" ,sans-serif;
+    border:solid;
 }
 
 
-/* ---------------this is the #09a38c btn-lgt-green sign-up button------------ */
+/* ---------------------------small sign up button---------------- */
 
 
-.btn-lgt-green {
-    border:#09a38c solid;
-    color:#09a38c;
-    margin-top:1rem;
-    
-}
-
-.btn-lgt-green:hover {
-    background-color:#f3f6f5;
-}
-
-.btn-lgt-green:active {
-    background-color: rgb(165, 165, 165);
-    border:solid #f3f6f5;
-    color:#f3f6f5
+.small-btn {
+    margin-top: 0px;
+    padding:.45rem 1.85rem .45rem 1.85rem;
+    font-weight: lighter;
+    font-size: 1rem;
+    min-width:8rem;
 }
 
 
-/* ------------------------team logos are styled here-------------------------------------- */
-
-
-.team-names ul {
-    padding:1.75rem 5.25rem 0.25rem 5.25rem;
-    list-style-type: none;
-    margin:0;
-}
-
-.team-names ul li img {
-    margin-bottom:1.5rem;
-}
-
-
-/*-----------------------this is the banner with the soccer players-----------------------------*/
-
-
-.call-to-action-banner {
-    background-image:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)) ,url(/images/banners/soccer-banner-bw.jpg);
-    padding-top:3rem;
-    padding-bottom:6.5rem;
-}
-
-.call-to-action-h2 {
-    margin:2.5rem 0rem 2rem 0rem;
-    font-size:1.5rem;
-    text-transform:uppercase;
-    
-}
-
-
-/* -------------------this is the btn- white sign-up button-------------------------------- */
+/* ------------------- white sign-up button  #f3f6f5-------------------------------- */
 
 
 .btn-white {
     border:#f3f6f5 solid;
-    color:#f3f6f5;
-    margin-top:2rem;
-    
+    color:#f3f6f5; 
 }
 
 .btn-white:hover {
@@ -282,68 +236,38 @@ small, .text_small {
 }
 
 
-/*-------------------------this is the brand creation platform --------------------------*/
+
+/* ------------------------------          Containers          ---------------------------- */
 
 
-.brand-platform {
-    display:inline-block;
-    text-align: center;
-    width:100%;
-    color:black;
-    font-family:sans-serif;
-}
 
-.platform-section {
-    margin-top:5rem;
-    margin-bottom:5rem;
-}
 
-.platform-container {
-    width:100%;
-    max-width:40rem;
-}
-
-.platform-banner {
-    display:inherit;
-    font-weight: normal;
-    text-transform:uppercase;
-    padding:0 .75rem 0rem .75rem;
-}
-
-.platform-p {
-    font-family:sans-serif;
-    font-size: 1.15rem;
-    line-height: 1.45;
-    padding:0rem 1rem 0rem 1rem;
-}
-
-.platform-image {
-    width:95%;
-}
-
-p {
-    margin-bottom: 1rem;
+.container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:min(80rem,100%);
+    margin:0 auto;
+    text-align:center;
+    
 }
 
 
-/* --------------------------------this is the footer-------------------------------- */
+/* ---------------------------------------      Footer / Sub Footer     ---------------------------------------- */
+
+
 
 .footer {
     background-color:#066051;
-    text-align:center;
-    color:#fff
-}
-
-.footer a {
-    color:#fff
 }
 
 .footer .container {
-    display:flex;
-    flex-flow:column nowrap;
-    align-items: center;
-    padding:1.5rem;
+    background-color:#066051;
+    color:#fff;
+    padding:1.25rem;
+    width:100%;
 }
+
 
 .footer .logo {
     margin:0 auto;
@@ -358,55 +282,169 @@ p {
     background-color:#044438;
 }
 
+.sub-footer .container{
+    background-color:#044438;
+    color:#fff;
+    width:100%;
+}
+
 .sub-footer ul{
     display:flex;
-    flex-direction:row;
+    justify-content: center;
+    gap:1.5rem;
     list-style-type: none;
     margin:0;
     padding:0;
+    padding-top:.75rem;
     font-size:smaller;
+    color:#fff
+}
+.sub-footer li a{
+    color:#fff;
+    text-decoration:none;
 }
 
-.sub-footer li {
-    padding-left:1.25rem;
+.sub-footer li a:hover {
+    text-decoration: underline;
 }
+
+
+
+/* -----------------------------             Navigation bar                ------------------------ */
+
+
+
+/* ----------------------------- Polished Logo----------------- */
+
+.logo {
+    display:inline-block;
+    width:12rem;
+}
+
+.logo:hover{
+    opacity: .6;
+    transition: .4s;
+}
+
+/* ------------------------Masthead Sign-Up Button ---------------- */
+
+.masthead .small-btn:hover {
+    background-color: #066051;
+    color:#fff
+}
+
+.masthead .container{
+    padding:1rem 0rem;
+}
+
+.nav{
+    display:flex;
+    flex-flow:column nowrap;
+}
+
+.nav ul {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+
+.nav li {
+    margin-bottom:1.25rem;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* - - - - - - - - - - - - - - - - "Polished" content starts here (order of appearance) - - - - - - - - - - - - - - */
+
+/* ------------------------------    Page design "Mobile First"     -------------------------------- */
+
+
+
+
+/*--------------------------- this is the baseball player banner---------------------------- */
+
+
+.hero-banner {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)),url(/images/banners/hero-home.jpg);
+}
+
+.hero-banner .container{
+    padding:9rem 2rem;
+}
+
+
+/* ------------------------team logos are styled here-------------------------------------- */
+
+
+.team-names .container {
+    flex-flow:row wrap;
+    padding: 2rem 2.5rem;
+}
+
+.team-names ul {
+padding:0rem;
+margin: 0 auto;
+}
+
+.team-names ul li {
+    display:flex;
+    list-style-type: none;
+    padding:0;
+    margin-bottom:1.5rem;
+    width:15rem;
+}
+
+/*-------------------------this is the brand creation platform "Design your brand" --------------------------*/
+
+
+.platform {
+    text-align: center;
+    width:100%;
+    color:black;
+    font-family:sans-serif;
+}
+.platform .container{
+    padding:5rem 1.5rem;
+}
+.platform p {
+    font-size: 1.25rem;
+}
+.platform img{
+    margin-bottom:2rem;
+    width:100%;
+}
+
 
 /* ----------------------this is where adaptive media queries are set ------------------ */
 
 @media only screen and (min-width:30em) {
 
 
-.nav {
-    display:flex;
-    flex-flow:row nowrap;
-    justify-content: space-evenly;
-}
 
 /* -----------------------large mobile team logos----------------- */
 
-.team-names ul {
-    display:flex;
-    column-gap:1rem;
-    flex-flow:row wrap;
-    justify-content:space-between;
-    width:100%;
-    padding:1rem 3rem;
+.team-names .container {
+    padding: 2rem 2rem;
 }
 
-.team-names li {
-    width:47%;
-    padding:1rem 2rem;
-}
-
-.team-names ul li img {
-    margin-bottom:0%;
-}
 
 }
 
 
-@media only screen and (min-width:45em) {
+
+@media only screen and (min-width:45em) {  /*- - - - - - - - - Tablet Size Polished adaptive styles - - - - - - - - - - */
     
+
 /*------------------------- tablet adaptive type scale----------------------------- */
 
 
@@ -446,14 +484,19 @@ small, .text_small {
 /* ----------------------tablet adaptive team logo section------------ */
 
 
-.team-names ul {
-    display:flex;
-    flex-flow:row wrap;
-    justify-content: space-around;
+.team-names ul{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    gap: 3rem;
 }
 
 }
-@media only screen and (min-width:60em) {
+
+
+@media only screen and (min-width:60em) { /*- - - - - - - - - - - - - Laptop Adaptive styles - - - - - - - - - - */
+
+
 
 /*---------------------------laptop adaptive type scale ---------------------- */
 
@@ -478,11 +521,11 @@ h4 {
 }
 
 h5 {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
 }
 
 h6,p {
-    font-size: .8rem;
+    font-size: 1.3rem;
 }
 
 small {
@@ -494,18 +537,21 @@ small {
 
 
 .masthead {
-    padding:0rem 14rem .5rem 14rem;
+    width:min(65rem,100%);
+    margin:0 auto;
 }
 
 
 .masthead .container {
-    display:flex;
+    justify-content: space-around;
     flex-flow:row nowrap;
-    flex-grow:1;
-    align-items:center;
+    padding:.5rem 1.25rem;
 }
 
 .masthead .logo-wrap{
+    display:flex;
+    align-content: center;
+    justify-content: center;
     margin:0;   
 }
 
@@ -518,18 +564,17 @@ small {
     justify-content:flex-start;
     flex-grow:1;
     align-items: center;
+    flex-flow: row nowrap;
 }
 
-.nav ul{
+.nav ul {
     display:flex;
     flex-flow:row nowrap;
     flex-grow:1;
-    align-items: center;
-
 }
+
 .nav li {
     display:flex;
-    align-items: center;
     padding-left:1rem;
     margin-bottom:0;
     min-width:5rem;
@@ -552,56 +597,197 @@ small {
 /* ----------------------------laptop team logos adaptive section---------------------- */
 
 
+.team-names .container {
+    width:100%;
+}
+
 .team-names ul {
     display:flex;
-    flex-flow:row nowrap;
+    width: min(80rem ,100%);
+    margin:0 auto;
     justify-content: space-between;
-    padding:1.75rem 2rem;
-    padding-right:0rem;
 }
 
 .team-names li {
     text-align:center;
     padding:0;
+    width:min(10rem,100%)
 }
 
-.team-names ul li img {
+
+/* -------------------adaptive platform------------- */
+
+
+.platform .container {
     width:50%;
+    padding:5rem 1.5rem;
 }
 
+.platform h2 {
+    padding: 0 2rem;
+}
+
+/* ----------adaptive call to action ----------- */
+
+.call-to-action .banner-header {
+    padding:0 8rem;
+}
 
 /* <--------------------this is where the adaptive footer is styled ---------------------> */
 
 .footer .container {
-    display:flex;
-    flex-flow: row nowrap;
+    flex-direction: row;
     justify-content: space-between;
-    flex-grow:1;
-    align-items:center;
-    padding:1.5rem 15rem 1.25rem 13.5rem;
-}
-
-.small-btn .btn-white .footer-btn {
-    margin:0 0;
+    width:min(65rem,100%);
 }
 
 .footer .logo {
     display: flex;
-    margin:0 0;
+    margin:0;
     margin-bottom:0;
 }
 
-.sub-footer ul{
+.sub-footer ul {
     list-style-type: none;
     margin:0;
     padding:0;
     font-size:smaller;
-    
 }
 
 .sub-footer li {
     padding-left:1.25rem;
 }
 
+.footer .footer-btn {
+    margin:0;
+}
+
+
+}
+
+
+
+
+
+
+/*- - - - - - - - - - - - - - - - - - - - - - - Platform Tour Page - - - - - - - - - - - - - - - - - - - */
+ /* ----------------------------*****             Mobile First           *****-------------------------- */
+
+
+
+
+
+
+/* -----------------------Platform tour banner "next level design"--------------- */
+
+
+.platform-tour-page .platform-tour {
+    background-image:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.45)), url(/Images/banners/hero-platform.jpg);
+    text-align:center;
+}
+
+.platform-tour #platform-tour-hero {
+    color:#fff
+}
+
+.platform-tour {
+    margin-bottom:3rem;
+}
+
+
+/* -----------------------------------Polished  + Platform ---------------------------- */
+
+
+.polished-platform {
+    padding:0rem 1.5rem;
+    margin-bottom: 6rem;
+}
+
+.polished-header {
+    text-align:left;
+}
+
+.polished-content {
+    text-align: left;
+    margin-top:0;
+}
+
+.polished-platform img {
+    margin-bottom:1rem;
+}
+
+@media only screen and (min-width:30em) { /*- - - - - - - Large mobile platform tour - - - - - - - */
+
+
+
+/* -------------------large mobile adaptive platform football banner ------------ */
+
+
+.platform-tour-page .platform-tour {
+    padding:3.5rem 1rem;
+}
+
+
+/* ---------------large mobile adaptive polished  + grid container------------------ */
+
+
+    .polished-grid-container img {
+    width:min(25rem,100%);
+}
+
+}
+
+
+@media only screen and (min-width:45em) { /*- - - - - - - - - - Tablet Adaptive Platform Tour - - - - - - */
+
+
+/* ---------------tablet polished platform grid container------------------ */
+
+
+.polished-grid-container {
+    display:grid;
+    grid-template-columns: 1fr 5rem 1fr;
+    grid-template-areas:
+    "cont . img"
+    "p . img";
+    width:min(55rem,100%);
+    justify-self:center;
+    margin-bottom:6rem;
+}
+
+.polished-grid-container:nth-child(2n) {
+    grid-template-areas:
+    "img . cont"
+    "img . p";
+}
+
+.polished-header {
+    grid-area:cont;
+    align-self: flex-end;
+}
+
+.polished-content {
+    grid-area:p;
+}
+
+.polished-grid-container img {
+    grid-area:img;
+    width:100%;
+}
+
+}
+
+
+
+
+@media only screen and (min-width:60em) {
+
+
+/* --------------laptop adaptive platform-football banner--------------- */
+
+
+.platform-tour-page .platform-tour{
+    padding: 5.25rem 2rem;
+}
 
 }

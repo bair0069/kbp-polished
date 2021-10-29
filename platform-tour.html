@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
-    <link rel="stylesheet" href=/CSS/main.css>
-    
-    <title>Polished</title>
+    <link href="./CSS/main.css" rel="stylesheet">
+    <title>Platform Tour</title>
 </head>
 <body>
     <header class="masthead" >       
@@ -17,8 +16,8 @@
                         <img src="/images/logos/logo-polished-color.svg" alt= "Polished">
                     </a>
                 </h1>
-                <nav id="nav" class="nav" role="navigation">
-                    <ul class="nav-ul">
+                <nav class="nav">
+                    <ul>
                         <li id="platform-tour" >
                             <a  href="./platform-tour.html">Platform Tour</a>
                         </li>
@@ -26,45 +25,66 @@
                             <a href="#">Pricing</a>
                         </li>
                         <li class="sign-in">
-                        <a href="#">Sign In</a>
+                            <a href="#">Sign In</a>
                         </li>
                         <li class="sign-up">
-                            <a class="sign-up-btn small-btn btn-pri-green" href="#">Sign Up</a>
+                            <a class=" sign-up-btn small-btn btn-pri-green"
+                            href="#">Sign Up</a>
                         </li>
-                        
                     </ul>
                 </nav>
             </div>
+                
     </header>
-
-    <main>
-        <section class="banner hero-banner">
+    <main class= "platform-tour-page">
+        <section class="banner platform-tour">
             <div class="container">
-                    <h2 class="banner-header"> 
-                    Community Feel. Professional Look.
-                    </h2>
-                    <p>
-                    Create your team's new look with our simple, fast brand builder.   
+                    <h1 id="platform-tour-hero"> 
+                        Next Level Design at Your Fingertips.
+                    </h1>
+                    <p class="banner-p">
+                        The Polished+ platform makes designing your brand fast and simple.
                     </p>
                     <a class="sign-up-btn btn-lgt-green" href="./">Sign Up</a>
             </div>
         </section>
-        <section class="team-names">
-                <div class="container">
-                    <ul>
-                        <li><img src="/images/logos/logo-ns.svg" alt="north star"></li>
-                        <li><img src="/images/logos/logo-tt.svg" alt="top table"></li>
-                        <li><img src="/images/logos/logo-qc.svg" alt="quidditch canada"></li>
-                        <li><img src="/images/logos/logo-met.svg" alt="metcalfe jets"></li>
-                    </ul>
+        <section class="polished-platform">
+            <div class="container">
+                <h2>The Polished+ Platform</h2>
+                <div class="polished-grid-container">
+                        <h3 class="polished-header">Build your logo</h3>
+                        <p class="polished-content">
+                        Choose from high quality symbols, characters, type, and more to create your logo! See colour variations and make high quality vector logos!
+                        </p>
+                        <img src="./Images/product/build-your-logo.jpg">
                 </div>
-        </section> 
-        
-
+            <div class="polished-grid-container">
+                <h3 class="polished-header">Develop your brand</h3>
+                <p class="polished-content">
+                    Choose from high quality templates or start from scratch. Our Brand Builder™ system can help you create exactly what you are looking for.
+                </p>
+                <img src ="./Images/product/build-your-brand.jpg">
+            </div>
+            <div class="polished-grid-container">
+                <h3 class="polished-header">See your logo in action</h3>
+                <p class="polished-content">
+                        See how your logo can be used in a number of scenarios merchandise, marketing material, and more!
+                </p>
+                <img src="./Images/product/logo-in-action.jpg">
+                </div>
+            <div class="polished-grid-container">
+                <h3 class="polished-header">Print your products</h3>
+                <p class="polished-content">
+                        Submit your designs to our professional printers to have your products created and shipped to you!
+                </p>
+                <img src="./Images/product/print-your-product.jpg">
+            </div>
+            </div>
+        </section>
         <section class="banner platform">
             <div class= "container">
                 <h2 class="banner-header">
-                        Design your brand from top to bottom.
+                        A platform like no other.
                     </h2>
                     <p>
                         With the Polished brand builder, you can create any asset your team could need. From    logos to jerseys, to merchandise, to advertisements.
@@ -73,7 +93,7 @@
                     <img src="/images/product/laptop-platform.png" alt="Brand customizing platform">
                 </div>    
             </section>
-        <section class="call-to-action banner ">
+        <section class= "call-to-action banner">
             <div class=" container">
                 <h2 class="banner-header">
                 Join now and take your team to the next level.
@@ -87,7 +107,7 @@
     <footer class="footer">
         <div class="container">
             <a  href="./" class="logo"><img src="/images/logos/logo-polished-white.svg" alt="Polished white"></a>
-            <a class="sign-up-btn small-btn btn-white footer-btn" href="./">Sign Up</a>
+            <a class=" sign-up-btn small-btn btn-white footer-btn" href="./">Sign Up</a>
         </div>
         <div class="sub-footer">
             <div class="container">
@@ -99,6 +119,5 @@
             </div>
         </div>
     </footer>
-    <script src="./main.js"></script>
 </body>
 </html>
