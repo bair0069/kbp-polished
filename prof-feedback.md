@@ -59,3 +59,12 @@ File Organization & Commits: 1/1
 Total: 4.75/5
 
 - You've added the `.container` class, but you are not using it as a flexible container! Instead of setting specific padding values, use a `max-width` in combination with `margin: 0 auto;` to center things.
+
+## Week 7 ----------------------
+
+Code Quality: 3/3
+Design: 1/1
+File Organization & Commits: 1/1
+Total: 5/5
+
+Awesome work! You used an extra empty column to create spacing, which works fine. However, using `gap` would be simpler as some content may auto-flow into that column.
