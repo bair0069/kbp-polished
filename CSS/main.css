@@ -153,7 +153,7 @@ small, .text_small {
 
 
 .btn-lgt-green {
-    border:#09a38c solid;
+    border:#09a38c;
     color:#09a38c;
 }
 
@@ -164,7 +164,7 @@ small, .text_small {
 .btn-lgt-green:active {
     background-color: rgb(165, 165, 165);
     border:solid #f3f6f5;
-    color:#f3f6f5
+    color:#f3f6f5;
 }
 
 
@@ -172,8 +172,7 @@ small, .text_small {
 
 
 .btn-pri-green {
-    border:solid #066051;
-    border-width:2px;
+    border:#066051;
 }
 
 .btn-pri-green:hover {
@@ -182,7 +181,7 @@ small, .text_small {
 
 .btn-pri-green:active {
     background-color: rgb(165, 165, 165);
-    border:solid #f3f6f5;
+    border:#f3f6f5;
     color:#f3f6f5
 }
 
@@ -196,7 +195,7 @@ small, .text_small {
     text-decoration:none;
     text-align:center;
     border-radius:2rem;
-    border-width:1px;
+    border-width:.5px;
     font-size:1.35rem;
     font-family:"Ubuntu" ,sans-serif;
     border:solid;
@@ -226,7 +225,7 @@ small, .text_small {
 .btn-white:hover {
     background-color:#f3f6f5;
     color:#09a38c;
-    border:solid #09a38c
+    border:solid #09a38c;
 }
 
 .btn-white:active {
@@ -330,7 +329,13 @@ small, .text_small {
 
 .masthead .small-btn:hover {
     background-color: #066051;
-    color:#fff
+    color:#fff;
+}
+
+.masthead .small-btn:active {
+    background-color: rgb(165, 165, 165);
+    border:#f3f6f5;
+    color:#f3f6f5
 }
 
 .masthead .container{
@@ -369,9 +374,17 @@ a:hover {
 /* ------------------------------    Page design "Mobile First"     -------------------------------- */
 
 
+/* - - - - - - - - - - - - - - - - - - - - - - -  Header in Reusable Classes above - - - - - - - - - - - - - - - - - - - */
 
 
-/*--------------------------- this is the baseball player banner---------------------------- */
+
+/* - - - - - - - - - - - - - - - - - - - - - - -      Main      - - - - - - - - - - - - - - - - - - - */
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - -  Hero-Banner   - - - - - - - - - - - - - - - - - - - */
+
 
 
 .hero-banner {
@@ -383,7 +396,7 @@ a:hover {
 }
 
 
-/* ------------------------team logos are styled here-------------------------------------- */
+/* - - - - - - - - - - - - - - - - - - - - - - -  Team Names Section  - - - - - - - - - - - - - - - - - - - */
 
 
 .team-names .container {
@@ -404,7 +417,8 @@ margin: 0 auto;
     width:15rem;
 }
 
-/*-------------------------this is the brand creation platform "Design your brand" --------------------------*/
+/* - - - - - - - - - - - - - - - - - - - - - - -  Platform Section - - - - - - - - - - - - - - - - - - - */
+
 
 
 .platform {
@@ -425,13 +439,24 @@ margin: 0 auto;
 }
 
 
-/* ----------------------this is where adaptive media queries are set ------------------ */
+/* - - - - - - - - - - - - - - - - - - - - - - -  Call to action banner in reusable classes above - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - -  Footer in Reusable Classes above  - - - - - - - - - - - - - - - - - - - */
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - -  Adaptive Media Queries   - - - - - - - - - - - - - - - - - - - */
+
 
 @media only screen and (min-width:30em) {
 
 
+/* - - - - - - - - - - - - - - - - - - - - - - -      Main      - - - - - - - - - - - - - - - - - - - */
 
-/* -----------------------large mobile team logos----------------- */
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - -  Large Mobile Adaptive Logos    - - - - - - - - - - - - - - - - - - - */
 
 .team-names .container {
     padding: 2rem 2rem;
@@ -445,7 +470,10 @@ margin: 0 auto;
 @media only screen and (min-width:45em) {  /*- - - - - - - - - Tablet Size Polished adaptive styles - - - - - - - - - - */
     
 
-/*------------------------- tablet adaptive type scale----------------------------- */
+/* - - - - - - - - - - - - - - - - - - - - - - -   Tablet   Type Scale     - - - - - - - - - - - - - - - - - - - */
+
+
+
 
 
 html {
@@ -481,7 +509,11 @@ small, .text_small {
 }
 
 
-/* ----------------------tablet adaptive team logo section------------ */
+/* - - - - - - - - - - - - - - - - - - - - - - -      Main      - - - - - - - - - - - - - - - - - - - */
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - -  Tablet Adaptive Logos    - - - - - - - - - - - - - - - - - - - */
 
 
 .team-names ul{
@@ -498,7 +530,10 @@ small, .text_small {
 
 
 
-/*---------------------------laptop adaptive type scale ---------------------- */
+/* - - - - - - - - - - - - - - - - - - - - - - -     Laptop Type Scale     - - - - - - - - - - - - - - - - - - - */
+
+
+
 
 
 html {
@@ -533,7 +568,9 @@ small {
 } 
 
 
-/*-------------------- this is where the laptop adaptive the header is styled--------------------*/
+/* - - - - - - - - - - - - - - - - - - - - - - -  Laptop Adaptive Header      - - - - - - - - - - - - - - - - - - - */
+
+
 
 
 .masthead {
@@ -594,7 +631,10 @@ small {
 }
 
 
-/* ----------------------------laptop team logos adaptive section---------------------- */
+/* - - - - - - - - - - - - - - - - - - - - - - -      Main      - - - - - - - - - - - - - - - - - - - */
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - -  Laptop Adaptive Logos    - - - - - - - - - - - - - - - - - - - */
 
 
 .team-names .container {
@@ -615,7 +655,7 @@ small {
 }
 
 
-/* -------------------adaptive platform------------- */
+/* - - - - - - - - - - - - - - - - - - - - - - -  Laptop Adaptive Platform Banner      - - - - - - - - - - - - - - - - - - - */
 
 
 .platform .container {
@@ -627,13 +667,17 @@ small {
     padding: 0 2rem;
 }
 
-/* ----------adaptive call to action ----------- */
+/* - - - - - - - - - - - - - - - - - - - - - - -  Laptop Adaptive Call to Action Banner      - - - - - - - - - - - - - - - - - - - */
+
 
 .call-to-action .banner-header {
     padding:0 8rem;
 }
 
-/* <--------------------this is where the adaptive footer is styled ---------------------> */
+
+/* - - - - - - - - - - - - - - - - - - - - - - -   Laptop Adaptive Footer     - - - - - - - - - - - - - - - - - - - */
+
+
 
 .footer .container {
     flex-direction: row;
@@ -666,16 +710,24 @@ small {
 }
 
 
+/* - - - - - - - - - - - - - - - - - - - - - - -Polished Page Ends - - - - - - - - - - - - - - - - - - */
 
 
 
 
-/*- - - - - - - - - - - - - - - - - - - - - - - Platform Tour Page - - - - - - - - - - - - - - - - - - - */
+
+
+
+
+/*- - - - - - - - - - - - - - - - - - - - - - - Platform Tour Page Begins - - - - - - - - - - - - - - - - - - - */
  /* ----------------------------*****             Mobile First           *****-------------------------- */
 
 
+/* - - - - - - - - - - - - - - - - - - - - - - -      Main    - - - - - - - - - - - - - - - - - - - */
 
 
+
+/* - - - - - - - - - - - - - - - - - - - - - - -     Banner      - - - - - - - - - - - - - - - - - - - */
 
 
 /* -----------------------Platform tour banner "next level design"--------------- */
@@ -695,7 +747,8 @@ small {
 }
 
 
-/* -----------------------------------Polished  + Platform ---------------------------- */
+/* - - - - - - - - - - - - - - - - - - - - - - -      Polished + Platform    - - - - - - - - - - - - - - - - - - - */
+
 
 
 .polished-platform {
@@ -716,16 +769,24 @@ small {
     margin-bottom:1rem;
 }
 
+/* - - - - - - - - - - - - - - - - - - - - - - -  Call to action banner in reusable classes above - - - - - - - - - - - - - - - - - - - */
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - -  Footer in Reusable Classes above  - - - - - - - - - - - - - - - - - - - */
+
+
+
 @media only screen and (min-width:30em) { /*- - - - - - - Large mobile platform tour - - - - - - - */
 
 
-
-/* -------------------large mobile adaptive platform football banner ------------ */
+/* - - - - - - - - - - - - - - - - - - - - - - -      Banner      - - - - - - - - - - - - - - - - - - - */
 
 
 .platform-tour-page .platform-tour {
     padding:3.5rem 1rem;
 }
+
+/* - - - - - - - - - - - - - - - - - - - - - - -      Main      - - - - - - - - - - - - - - - - - - - */
 
 
 /* ---------------large mobile adaptive polished  + grid container------------------ */
@@ -739,6 +800,10 @@ small {
 
 
 @media only screen and (min-width:45em) { /*- - - - - - - - - - Tablet Adaptive Platform Tour - - - - - - */
+
+
+    /* - - - - - - - - - - - - - - - - - - - - - - -      Main      - - - - - - - - - - - - - - - - - - - */
+
 
 
 /* ---------------tablet polished platform grid container------------------ */
@@ -778,12 +843,10 @@ small {
 }
 
 
+@media only screen and (min-width:60em) { /*- - - - - - - - - - - - Laptop Adaptive Platform Tour - - - - - - - - - - - */
 
+/* - - - - - - - - - - - - - - - - - - - - - - -      Banner      - - - - - - - - - - - - - - - - - - - */
 
-@media only screen and (min-width:60em) {
-
-
-/* --------------laptop adaptive platform-football banner--------------- */
 
 
 .platform-tour-page .platform-tour{
@@ -791,3 +854,254 @@ small {
 }
 
 }
+
+
+
+
+
+ /* - - - - - - - - - - - - - - - - - - - - - - - Platform Tour Page Ends - - - - - - - - - - - - - - - - - - - - - */
+
+
+
+
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - Pricing Page Begins -  - - - - - - - - - - - - - - - - - - - - */
+/* ---------------------------------Mobile First-------------------------------------- */
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - -      Pricing Banner     - - - - - - - - - - - - - - - - - - - */
+
+
+
+.pricing-banner p {
+    color:black;
+    font-size: 1.35rem;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - -  Pricing Table Section  - - - - - - - - - - - - - - - - - - - */
+
+
+/* ------------------------- Table Containers ------------------------- */
+
+
+.pricing-table .container {
+    flex-direction: row;
+    justify-content: center;
+    padding:2rem 1rem;
+    margin-bottom: 5rem;
+    width:100%;
+}
+
+.table-scroller {
+    overflow-x: scroll;
+    max-width: 100%;
+}
+
+/* -------------------------Table -------------------------*/
+
+table {
+    display:contents;
+    width:100%;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+
+/* -------------------------Table  Head -------------------------*/
+
+
+thead th {
+    padding-top:1.5rem;
+    text-align: center;
+    font-size:1.424rem;
+}
+
+
+/*-------------------------Table Body-------------------------*/
+
+
+tbody th, tbody td {
+    border-bottom:.025rem rgba(204, 203, 203, 0.438) solid;
+}
+
+tbody th {
+    min-width: 11rem;
+    text-align: left;
+    font-size: 1.266rem;
+}
+
+td {
+    text-align: center;
+    padding:1.5rem .5rem;
+}
+
+
+/*-------------------------Premium Price Column-------------------------*/
+
+
+.price td {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.price sup{
+    font-size: 2rem;
+}
+
+.price p {
+    margin-top:0;
+    font-size: 1rem;
+    margin-bottom:2rem;
+}
+
+.premium {
+    background-color: rgb(240 ,244, 241);
+    color:#066051
+}
+
+.premium-top {
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.premium-bottom {
+    border-bottom-left-radius:1rem;
+    border-bottom-right-radius: 1rem ;
+    margin-bottom: 1rem ;
+}
+
+.premium-btn {
+    color:#fff;
+    border:solid #09a38c;
+    background-color:#09a38c;
+}
+
+
+/* -------------------------Table Footer-------------------------*/
+
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.uppercase td:not(.table-buttons) {
+    padding-top: 3rem;
+    padding-bottom:0;
+    margin-bottom:0;
+}
+
+.table-button {
+    display: inline-block;
+    min-width:10rem;
+    padding:.5rem 2rem
+}
+
+.table-buttons {
+    
+    margin-bottom: 2rem;
+}
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - -  Call to action banner in reusable classes above - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - -  Footer in Reusable Classes above  - - - - - - - - - - - - - - - - - - - */
+
+
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - -  Pricing Adaptive Media Queries   - - - - - - - - - - - - - - - - - - - */
+
+
+
+
+@media only screen and (min-width:45rem){ /*- - - - - - - - - - - Pricing Tablet Adaptive Styles - - - - - - - - - - - -*/
+
+
+
+/* - - - - - - - - - - Pricing Banner - - - - - - - - - - -  */
+
+    
+.pricing-banner p {
+        font-size: 1.5rem;
+}
+
+/*- - - - - - - - - - -Pricing Table- - - - - - - - - - -*/
+
+
+/*--------------Head-------*/
+
+
+thead th {
+    font-size: 1.724rem;
+}
+
+
+/*-------------Body-----------*/
+
+
+tbody th {
+    font-size: 1.363rem;
+    min-width: 12rem;
+}
+
+td {
+    padding:1.5rem 2rem;
+}
+
+
+}
+
+
+
+@media only screen and (min-width:60rem){ /*- - - - - - - - - - - Pricing Laptop Adaptive Styles - - - - - - - - - - - -*/
+
+
+
+/* - - - - - - - - - - Pricing Banner - - - - - - - - - - -  */
+
+
+.pricing-banner p {
+    font-size: 1.95rem;
+}
+
+
+/*- - - - - - - - - - -Pricing Table- - - - - - - - - - -*/
+
+
+/*-------------------------Table Scroller-------------------------*/
+
+
+.table-scroller {
+        overflow: hidden;
+}
+
+
+/*--------------------- Head-------------------*/
+
+
+thead th {
+    font-size: 1.924rem;
+}
+
+
+/*---------------------Body--------------------*/
+
+
+tbody th {
+    font-size: 1.363rem;
+}
+
+td {
+    padding:1.5rem 4rem;
+}
+
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - -Pricing Page Ends - - - - - - - - - - - - - - - - - - */
