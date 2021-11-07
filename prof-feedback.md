@@ -68,3 +68,13 @@ File Organization & Commits: 1/1
 Total: 5/5
 
 Awesome work! You used an extra empty column to create spacing, which works fine. However, using `gap` would be simpler as some content may auto-flow into that column.
+
+
+## Week 9 ----------------------
+
+Code Quality: 2.75/3
+Design: 1/1
+File Organization & Commits: 1/1
+Total: 4.75/5
+
+- You can only have one `h1` per page, you have two. The "Affordable Pricing for All" heading should be the `h1`
