@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/main.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <header class="masthead form-masthead" >       
+        <div class="container">
+                <h2 class="logo-wrap">
+                    <a  href ="./index.html" class="logo">
+                        <img src="/images/logos/logo-polished-color.svg" alt= "Polished">
+                    </a>
+                </h2>
+                <nav class="nav">
+                    <ul>
+                        <li id="platform-tour" >
+                            <a  href="./platform-tour.html">Platform Tour</a>
+                        </li>
+                        <li>
+                            <a href="./pricing.html">Pricing</a>
+                        </li>
+                        <li class="sign-in">
+                            <a href="./">Sign In</a>
+                        </li>
+                        <li class="sign-up">
+                            <a class=" sign-up-btn small-btn btn-pri-green"
+                            href="./sign-up.html">Sign Up</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+                
+    </header>
+    <main class=" form-main banner">
+        <section class="sign-up-form">
+            <div class="container">
+                <form aria-label="Sign Up Form">
+                    <fieldset>
+                        <h1><legend>Sign Up</legend></h1>
+                        <label class= "screen-reader-text first-name" for="first-name">First Name</label>
+                        <div class="fn-ln">
+                            <input class="first-name" type="text" name="first-name" id="first-name" placeholder="First Name">
+                            <label class= "screen-reader-text last-name" for="last-name">Last Name</label>
+                            <input class="last-name" type="text" name="last-name" id="last-name" placeholder="Last Name">
+                        </div>
+                        <label class= "screen-reader-text" for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email">
+                        <label class= "screen-reader-text" for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Password">
+                        <label class= "screen-reader-text" for="conf-password">Password</label>
+                        <input type="conf-password" name="conf-password" id="conf-password" placeholder="Confirm Password">
+                        <div class="checkbox-div">
+                            <input aria-label="consent checkbox" type="checkbox">
+                            <small> I agree to the <a>Terms of Service</a> & <a>Privacy Policy</a>.</small>
+                        </div>
+                            <button class="sign-up-btn small-btn premium-btn form-btn" type="submit">
+                                Submit
+                            </button>
+                            <small>Already have an account? <a>Sign In</a></small>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer form-footer">
+        <div class="container">
+            <a  href="./" class="logo"><img src="/images/logos/logo-polished-white.svg" alt="Polished white"></a>
+            <a class=" sign-up-btn small-btn btn-white footer-btn" href="./sign-up.html">Sign Up</a>
+        </div>
+        <div class="sub-footer">
+            <div class="container">
+                <small>&copy 2021 Algonquin College</small>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
