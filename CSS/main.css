@@ -1131,7 +1131,7 @@ td {
 
 .sign-up-form .container {
     align-items: center;
-    padding: 4.5rem 1rem;
+    padding: 5.01rem 1rem;
     text-align: left;
 }
 
@@ -1202,10 +1202,10 @@ input:not([type="checkbox"]) {
 @media only screen and (min-width:45rem) {
     
     
-    /* - - - - - - - - - - - - - - - - - - - - - - -Main - - - - - - - - - - - - - - - - - - */
-    
-    
-    .fn-ln {
+/* - - - - - - - - - - - - - - - - - - - - - - -Main - - - - - - - - - - - - - - - - - - */
+
+
+.fn-ln {
         display:grid;
         grid-template-columns: 1fr 1fr;
     gap:1rem;
@@ -1232,7 +1232,7 @@ input:not([type="checkbox"]) {
 }
 
 @media only screen and (min-width:60rem){
-    
+
 
 /* - - - - - - - - - - - - - - - - - - - - - - -Header - - - - - - - - - - - - - - - - - - */
 
