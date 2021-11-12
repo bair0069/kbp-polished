@@ -1144,7 +1144,7 @@ form {
 }
 
 
-form h1{
+form h1 {
     justify-self: flex-start;
     text-transform: capitalize;
     margin-bottom:.75rem;
@@ -1165,7 +1165,7 @@ fieldset {
     width:100%;
 }
 
-input:not([type="checkbox"]){
+input:not([type="checkbox"]) {
     width:100%;
     min-width: 16rem;
     font-size: 1rem;
@@ -1224,7 +1224,7 @@ input:not([type="checkbox"]){
 /* - - - - - - - - - - - - - - - - - - - - - - Footer- - - - - - - - - - - - - - - - - - */
 
 
-.form-footer .container{
+.form-footer .container {
     padding:1.5rem 0rem;;
 }
 
