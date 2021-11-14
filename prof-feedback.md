@@ -78,3 +78,13 @@ File Organization & Commits: 1/1
 Total: 4.75/5
 
 - You can only have one `h1` per page, you have two. The "Affordable Pricing for All" heading should be the `h1`
+
+## Week 10 ----------------------
+
+Code Quality: 2.75/3
+Design: 1/1
+File Organization & Commits: 1/1
+Total: 4.75/5
+
+- Matching `label` and `input` should have the same parent. The label for the first name input is outside of the div
+- Remove the `min-width` on the form and inputs. The `width` you've assigned is enough. If for some reason they are shrinking too much, likely that is do to a necessity of how the parent is re-sizing the elements and in that case a min-width will cause issues and have the element overflow out of their parent, which is not good.
