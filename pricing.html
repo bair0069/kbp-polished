@@ -8,6 +8,10 @@
     <title>Pricing</title>
 </head>
 <body>
+    <ul class="skip-links">
+        <li><a href="#nav">Skip to navigation</a></li>
+        <li><a href="#main">Skip to main content</a></li>
+    </ul>
     <header class="masthead" >       
         <div class="container">
                 <h2 class="logo-wrap">
@@ -15,7 +19,7 @@
                         <img src="/images/logos/logo-polished-color.svg" alt= "Polished">
                     </a>
                 </h2>
-                <nav class="nav">
+                <nav id="nav" class="nav">
                     <ul>
                         <li id="platform-tour" >
                             <a  href="./platform-tour.html">Platform Tour</a>
@@ -33,43 +37,28 @@
                     </ul>
                 </nav>
             </div>
-                
     </header>
-    <main>
+    <main id="main">
         <section class="banner pricing-banner">
             <div class="container">
-                <h1>Affordable pricing for all.</h1>
-                <p>Select one of our manageable pricing plans that works best for you.</p>
+                <h1 tabindex="0" >Affordable pricing for all.</h1>
+                <p tabindex="0" >Select one of our manageable pricing plans that works best for you.</p>
             </div>
 
         </section>
         <section class="pricing-table">
             <div class="container">
                 <div class="table-scroller">
-                    <table>
+                    <table tabindex="0">
                         <thead>
-                            <tr>
-                                <th></th>
+                            <tr tabindex="0" >
+                                <th class="screen-reader-text">price tiers</th>
                                 <th scope="col">Basic</th>
                                 <th scope="col" class="premium premium-top">Premium</th>
                                 <th scope="col">Ultra</th>
                             </tr>
                             </th>
                         </thead>
-                        <tfoot>
-                            <tr class="uppercase">
-                                <th scope="row"></th>
-                                <td>Basic</td>
-                                <td class="premium" >Premium</td>
-                                <td>Ultra</td>
-                            </tr>
-                            <tr class="table-buttons">
-                                <th scope="row"></th>
-                                <td><a class="sign-up-btn   btn-lgt-green table-button" href="./sign-up.html">Sign Up</a></td>
-                                <td class="premium premium-bottom"  ><a class="sign-up-btn   premium-btn table-button" href="./sign-up.html">Sign Up</a></td>
-                                <td><a class="sign-up-btn  btn-lgt-green table-button" href="./sign-up.html">Sign Up</a></td>
-                            </tr>
-                        </tfoot>
                         <tbody>
                             <tr class="price">
                                 <th scope="row" >Price</th>
@@ -109,6 +98,20 @@
                             </tr>
                             
                         </tbody>
+                        <tfoot>
+                            <tr class="uppercase">
+                                <th class="screen-reader-text"scope="row">price tiers</th>
+                                <td>Basic</td>
+                                <td  class="premium" >Premium</td>
+                                <td >Ultra</td>
+                            </tr>
+                            <tr class="table-buttons">
+                                <th class="screen-reader-text" scope="row">sign up buttons</th>
+                                <td><a aria-label="Basic price tier sign-up button" class="sign-up-btn   btn-lgt-green table-button" href="./sign-up.html">Sign Up</a></td>
+                                <td class="premium premium-bottom"  ><a aria-label="Premium price tier sign-up button" class="sign-up-btn   premium-btn table-button" href="./sign-up.html">Sign Up</a></td>
+                                <td><a aria-label="Ultra price tier sign-up button" class="sign-up-btn  btn-lgt-green table-button" href="./sign-up.html">Sign Up</a></td>
+                            </tr>
+                        </tfoot>
                     </table>
                 </div>
             </div>
@@ -117,15 +120,16 @@
     <footer class="footer">
         <div class="container">
             <a  href="./" class="logo"><img src="/images/logos/logo-polished-white.svg" alt="Polished white"></a>
-            <a class=" sign-up-btn small-btn btn-white footer-btn" href="./sign-up.html">Sign Up</a>
+            <a class=" sign-up-btn small-btn btn-white footer-btn" href="sign-up.html">Sign Up</a>
         </div>
         <div class="sub-footer">
             <div class="container">
-                <small>&copy 2021 Algonquin College</small>
+                <small tabindex="0" >&copy 2021 Algonquin College</small>
                     <ul>
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Terms of Service</a></li>
                     </ul>
+                    <a class="to-top" href="#main" aria-label="Click to scroll to top of main content">To top</a>
             </div>
         </div>
     </footer>

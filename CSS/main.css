@@ -27,6 +27,78 @@ img {
 }
 
 
+
+/* -----------------------------Colour Palette -------------------------- */
+
+:root {
+--primary-green-lgt:#09a38c;
+--primary-green-:#066051;
+--primary-green-dark:#043a31;
+--color-accent:#a00303;
+--white:#fff;
+}
+
+
+/*---------------------------------Accessibility------------------------------- */
+
+
+*:focus {
+    outline: 5px solid var(--color-accent);
+    outline-offset: 5px;
+}
+
+
+.skip-links{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.skip-links a {
+    display:inline-block;
+    position: absolute;
+    top: -10rem;
+    left:2rem;
+    color: #fff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 3rem;
+    background-color: var(--color-accent);
+}
+    
+.skip-links a:focus {
+    top: 0; 
+}
+    
+    
+.to-top {
+    position: fixed;
+    right: 4rem;
+    bottom:0rem;
+    color:var(--white);
+    background-color: var(--color-accent);
+    transform: translateY(100%);
+    transition:
+        transform .25s;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    padding: 1.75rem 2rem;
+    border-radius: .5rem .5rem 0 0;
+}
+    
+.to-top:focus {
+    transform: translateY(0);
+}
+
+.screen-reader-text {
+    color:black;
+    font-size: .1px;
+    clip-path: polygon(0 0 , 0 .1px , .1px .1px, .1px .1px);
+}
+
+
+
 /* ------------------------------------this is where the mobile type scale is set------------------ */
 
 
@@ -47,7 +119,7 @@ h1 {
     margin-bottom:.5rem;
     font-size: 1.802rem;
     text-align: center;
-    color:#066051;
+    color:var(--primary-green-);
     text-transform: uppercase;
 }
 
@@ -69,7 +141,7 @@ h4 {
 
 h5 {font-size: 1.125rem;
     border-bottom: solid .045rem #e9eceb;
-    color:#066051;
+    color:var(--primary-green-);
     font-weight: 700;
 }
 
@@ -90,9 +162,10 @@ p {
 }
 
 a {
-    color:#066051;
+    color:var(--primary-green-);
     text-decoration:underline;
 }
+
 
 small, .text_small {
     font-size: 0.889rem;
@@ -149,15 +222,16 @@ small, .text_small {
 
 
 
-/* ---------------light-green #09a38c sign-up button------------ */
+/* ---------------light-green  sign-up button------------ */
 
 
 .btn-lgt-green {
-    border:#09a38c;
-    color:#09a38c;
+    border-color:#09a38c;
+    color:var(--primary-green-lgt);
 }
 
-.btn-lgt-green:hover {
+.btn-lgt-green:hover,
+.btn-lgt-green:focus {
     background-color:#f3f6f5;
 }
 
@@ -175,7 +249,8 @@ small, .text_small {
     border:#066051;
 }
 
-.btn-pri-green:hover {
+.btn-pri-green:hover,
+.btn-pri-green:focus {
     background-color:#f3f6f5;
 }
 
@@ -222,7 +297,8 @@ small, .text_small {
     color:#f3f6f5; 
 }
 
-.btn-white:hover {
+.btn-white:hover,
+.btn-white:focus {
     background-color:#f3f6f5;
     color:#09a38c;
     border:solid #09a38c;
@@ -257,11 +333,11 @@ small, .text_small {
 
 
 .footer {
-    background-color:#066051;
+    background-color:var(--primary-green-);
 }
 
 .footer .container {
-    background-color:#066051;
+    background-color:var(--primary-green-);
     color:#fff;
     padding:1.25rem;
     width:100%;
@@ -300,13 +376,12 @@ small, .text_small {
 }
 .sub-footer li a{
     color:#fff;
-    text-decoration:underline;
+    text-decoration:none;
 }
 
 .sub-footer li a:hover {
     text-decoration: underline;
 }
-
 
 
 /* -----------------------------             Navigation bar                ------------------------ */
@@ -371,7 +446,6 @@ small, .text_small {
 a:hover {
     text-decoration: underline;
 }
-
 
 /* - - - - - - - - - - - - - - - - "Polished" content starts here (order of appearance) - - - - - - - - - - - - - - */
 
@@ -963,7 +1037,7 @@ td {
 
 .premium {
     background-color: rgb(240 ,244, 241);
-    color:#066051
+    color:var(--primary-green-dark)
 }
 
 .premium-top {
@@ -979,9 +1053,15 @@ td {
 
 .premium-btn {
     color:#fff;
-    border:solid #09a38c;
-    background-color:#09a38c;
+    border:solid var(--primary-green-);
+    background-color:var(--primary-green-);
 }
+
+.premium-btn:hover {
+    background-color: var(--primary-green-lgt);
+}
+
+
 
 
 /* -------------------------Table Footer-------------------------*/
@@ -997,14 +1077,19 @@ td {
     margin-bottom:0;
 }
 
-.table-button {
+.table-button:not(.premium-btn) {
     display: inline-block;
     min-width:10rem;
-    padding:.5rem 2rem
+    padding:.5rem 2rem;
+    background-color:var(--white);
+    color:var(--primary-green-)
+}
+
+.table-button:hover{
+    text-decoration: underline;
 }
 
 .table-buttons {
-    
     margin-bottom: 2rem;
 }
 
@@ -1190,13 +1275,6 @@ input:not([type="checkbox"]) {
     color:black;
 }
 
-/* - - - - - - - - - - - - - - - - - - - - - - -Accessibility- - - - - - - - - - - - - - - - - - */
-
-.screen-reader-text {
-    color:black;
-    font-size: .1px;
-    clip-path: polygon(0 0 , 0 .1px , .1px .1px, .1px .1px);
-}
 
 
 @media only screen and (min-width:45rem) {

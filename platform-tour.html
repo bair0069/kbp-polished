@@ -9,14 +9,18 @@
     <title>Platform Tour</title>
 </head>
 <body>
+    <ul class="skip-links">
+        <li><a href="#nav">Skip to navigation</a></li>
+        <li><a href="#main">Skip to main content</a></li>
+    </ul>
     <header class="masthead" >       
         <div class="container">
-                <h1 class="logo-wrap">
-                    <a  href ="./" class="logo">
+                <h2 class="logo-wrap">
+                    <a  href ="./index.html" class="logo">
                         <img src="/images/logos/logo-polished-color.svg" alt= "Polished">
                     </a>
-                </h1>
-                <nav class="nav">
+                </h2>
+                <nav id="nav" class="nav">
                     <ul>
                         <li id="platform-tour" >
                             <a  href="./platform-tour.html">Platform Tour</a>
@@ -34,71 +38,70 @@
                     </ul>
                 </nav>
             </div>
-                
     </header>
-    <main class= "platform-tour-page">
+    <main id="main" class= "platform-tour-page">
         <section class="banner platform-tour">
             <div class="container">
-                    <h1 id="platform-tour-hero"> 
+                    <h1 tabindex="0" id="platform-tour-hero"> 
                         Next Level Design at Your Fingertips.
                     </h1>
-                    <p class="banner-p">
+                    <p tabindex="0" class="banner-p">
                         The Polished+ platform makes designing your brand fast and simple.
                     </p>
-                    <a class="sign-up-btn btn-lgt-green" href="sign-up.html">Sign Up</a>
+                    <a class="sign-up-btn btn-lgt-green" href="./sign-up.html">Sign Up</a>
             </div>
         </section>
         <section class="polished-platform">
             <div class="container">
-                <h2>The Polished+ Platform</h2>
-                <div class="polished-grid-container">
-                        <h3 class="polished-header">Build your logo</h3>
-                        <p class="polished-content">
+                <h2 tabindex="0" >The Polished+ Platform</h2>
+                <div tabindex="0"  class="polished-grid-container">
+                        <h3 tabindex="0"  class="polished-header">Build your logo</h3>
+                        <p tabindex="0"  class="polished-content">
                         Choose from high quality symbols, characters, type, and more to create your logo! See colour variations and make high quality vector logos!
                         </p>
-                        <img src="./Images/product/build-your-logo.jpg">
+                        <img tabindex="0" src="./Images/product/build-your-logo.jpg" alt= "Team Canada Canadian maple leaf on grid">
                 </div>
             <div class="polished-grid-container">
-                <h3 class="polished-header">Develop your brand</h3>
-                <p class="polished-content">
+                <h3 tabindex="0"  class="polished-header">Develop your brand</h3>
+                <p tabindex="0"  class="polished-content">
                     Choose from high quality templates or start from scratch. Our Brand Builder™ system can help you create exactly what you are looking for.
                 </p>
-                <img src ="./Images/product/build-your-brand.jpg">
+                <img  tabindex="0" src ="./Images/product/build-your-brand.jpg" alt="team jersey and brand builder customization menu ">
             </div>
             <div class="polished-grid-container">
-                <h3 class="polished-header">See your logo in action</h3>
-                <p class="polished-content">
+                <h3 tabindex="0" class="polished-header">See your logo in action</h3>
+                <p tabindex="0"  class="polished-content">
                         See how your logo can be used in a number of scenarios merchandise, marketing material, and more!
                 </p>
-                <img src="./Images/product/logo-in-action.jpg">
+                <img tabindex="0"  src="./Images/product/logo-in-action.jpg" alt="fully customized jersey">
                 </div>
             <div class="polished-grid-container">
-                <h3 class="polished-header">Print your products</h3>
-                <p class="polished-content">
+                <h3  tabindex="0"  class="polished-header">Print your products</h3>
+                <p tabindex="0"  class="polished-content">
                         Submit your designs to our professional printers to have your products created and shipped to you!
                 </p>
-                <img src="./Images/product/print-your-product.jpg">
+                <img tabindex="0" src="./Images/product/print-your-product.jpg" alt="Athlete wearing customized jersey on quidditch pitch">
             </div>
             </div>
         </section>
         <section class="banner platform">
-            <div class= "container">
-                <h2 class="banner-header">
+            <div tabindex="0" class= "container">
+                <h2 tabindex="0" class="banner-header">
                         A platform like no other.
                     </h2>
-                    <p>
+                    <p tabindex="0">
                         With the Polished brand builder, you can create any asset your team could need. From    logos to jerseys, to merchandise, to advertisements.
                         With simple templates, a variety of pre-designed elements, and an easy to use   platform, professional level sports branding is at your fingertips!
                     </p>
-                    <img src="/images/product/laptop-platform.png" alt="Brand customizing platform">
+                    <img tabindex="0"  src="/images/product/laptop-platform.png" alt="Brand customizing platform">
                 </div>    
             </section>
         <section class= "call-to-action banner">
             <div class=" container">
-                <h2 class="banner-header">
+                <h2 tabindex="0" class="banner-header">
                 Join now and take your team to the next level.
                 </h2>
-                <a class="sign-up-btn btn-white" href="sign-up.html">Sign Up</a>
+                <a tabindex="0" class="sign-up-btn btn-white" href="sign-up.html">Sign Up</a>
             </div>
         </section>
 
@@ -111,11 +114,14 @@
         </div>
         <div class="sub-footer">
             <div class="container">
-                <small>&copy 2021 Algonquin College</small>
+                <small tabindex="0" >&copy 2021 Algonquin College</small>
                     <ul>
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Terms of Service</a></li>
-                    </ul>
+                    </ul>   
+                    <a class="to-top" href="#main" aria-label=" scroll to top of main ">
+                        To top
+                    </a>
             </div>
         </div>
     </footer>

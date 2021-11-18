@@ -8,6 +8,10 @@
     <title>Sign Up</title>
 </head>
 <body>
+    <ul class="skip-links">
+        <li><a href="#nav">Skip to navigation</a></li>
+        <li><a href="#main">Skip to main content</a></li>
+    </ul>
     <header class="masthead form-masthead" >       
         <div class="container">
                 <h2 class="logo-wrap">
@@ -15,7 +19,7 @@
                         <img src="/images/logos/logo-polished-color.svg" alt= "Polished">
                     </a>
                 </h2>
-                <nav class="nav">
+                <nav id="nav" class="nav">
                     <ul>
                         <li id="platform-tour" >
                             <a  href="./platform-tour.html">Platform Tour</a>
@@ -33,12 +37,11 @@
                     </ul>
                 </nav>
             </div>
-                
     </header>
-    <main class=" form-main banner">
+    <main id="main" class=" form-main banner">
         <section class="sign-up-form">
             <div class="container">
-                <form aria-label="Sign Up Form">
+                <form tabindex="0" aria-label="Sign Up Form">
                     <fieldset>
                         <h1><legend>Sign Up</legend></h1>
                         <label class= "screen-reader-text first-name" for="first-name">First Name</label>
@@ -55,12 +58,15 @@
                         <input type="conf-password" name="conf-password" id="conf-password" placeholder="Confirm Password">
                         <div class="checkbox-div">
                             <input aria-label="consent checkbox" type="checkbox">
-                            <small> I agree to the <a>Terms of Service</a> & <a>Privacy Policy</a>.</small>
+                            <small> I agree to the 
+                                <a href="#">Terms of Service</a> & 
+                                <a href="#">Privacy Policy</a>.
+                            </small>
                         </div>
                             <button class="sign-up-btn small-btn premium-btn form-btn" type="submit">
                                 Submit
                             </button>
-                            <small>Already have an account? <a>Sign In</a></small>
+                            <small>Already have an account? <a href="#">Sign In</a></small>
                     </fieldset>
                 </form>
             </div>
@@ -69,11 +75,11 @@
     <footer class="footer form-footer">
         <div class="container">
             <a  href="./" class="logo"><img src="/images/logos/logo-polished-white.svg" alt="Polished white"></a>
-            <a class=" sign-up-btn small-btn btn-white footer-btn" href="./sign-up.html">Sign Up</a>
+            <a class=" sign-up-btn small-btn btn-white footer-btn" href="sign-up.html">Sign Up</a>
         </div>
         <div class="sub-footer">
             <div class="container">
-                <small>&copy 2021 Algonquin College</small>
+                <small tabindex="0" >&copy 2021 Algonquin College</small>
                     <ul>
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Terms of Service</a></li>
