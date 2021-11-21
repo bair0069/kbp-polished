@@ -88,3 +88,13 @@ Total: 4.75/5
 
 - Matching `label` and `input` should have the same parent. The label for the first name input is outside of the div
 - Remove the `min-width` on the form and inputs. The `width` you've assigned is enough. If for some reason they are shrinking too much, likely that is do to a necessity of how the parent is re-sizing the elements and in that case a min-width will cause issues and have the element overflow out of their parent, which is not good.
+
+
+## Week 11 ----------------------
+
+Code Quality: 3/3
+Design: 1/1
+File Organization & Commits: 1/1
+Total: 5/5
+
+Your skip links, to top, and focus outline are all a little too bold and large. We definitely want them to be noticeable for our user, but not to the point that they are overly intrusive, which I feel your are.
