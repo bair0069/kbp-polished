@@ -98,3 +98,23 @@ File Organization & Commits: 1/1
 Total: 5/5
 
 Your skip links, to top, and focus outline are all a little too bold and large. We definitely want them to be noticeable for our user, but not to the point that they are overly intrusive, which I feel your are.
+
+
+## Week 12 ----------------------
+
+Code Quality: 2.76/3
+Design: 1/1
+File Organization & Commits: 1/1
+Total: 4.75/5
+
+- Line 206: you have an extra empty transition causing some errors
+```css
+.slideIn , .hero-banner p {
+    transition:
+    transform:translateX(-5rem);
+    opacity:0;
+    animation:slideIn .5s .7s forwards;
+    ;
+}
+```
+- You also forgot to apply the animation to the button!
