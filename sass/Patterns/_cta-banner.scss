@@ -1,0 +1,18 @@
+/*-----------------------call to action banner-----------------------------*/
+
+
+.call-to-action {
+	background-image:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)) ,url(/images/banners/soccer-banner-bw.jpg);
+}
+
+@media only screen and (min-width:60em) { /*- - - - - - - - - - - - - Laptop Adaptive styles - - - - - - - - - - */
+
+.call-to-action {
+
+.banner-header{
+	padding:0 8rem;
+}
+
+}
+
+}

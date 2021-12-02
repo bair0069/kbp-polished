@@ -1,0 +1,258 @@
+
+/* ---------------------------------Mobile First-------------------------------------- */
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - -      Pricing Banner     - - - - - - - - - - - - - - - - - - - */
+
+
+
+.pricing-banner p {
+    color:black;
+    font-size: 1.35rem;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - -  Pricing Table Section  - - - - - - - - - - - - - - - - - - - */
+
+
+/* ------------------------- Table Containers ------------------------- */
+
+
+.pricing-table .container {
+    flex-direction: row;
+    justify-content: center;
+    padding:2rem 1rem;
+    margin-bottom: 5rem;
+    width:100%;
+}
+
+.table-scroller {
+    overflow-x: scroll;
+    max-width: 100%;
+}
+
+/* -------------------------Table -------------------------*/
+
+table {
+    font-family:$font-stack;
+    display:contents;
+    width:100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    color:black;
+}
+
+
+/* -------------------------Table  Head -------------------------*/
+
+
+thead th {
+    padding-top:1.5rem;
+    text-align: center;
+    font-size:1.424rem;
+}
+
+
+/*-------------------------Table Body-------------------------*/
+
+
+tbody th, tbody td {
+    border-bottom:.025rem rgba(204, 203, 203, 0.438) solid;
+}
+
+tbody th {
+    min-width: 11rem;
+    text-align: left;
+    font-size: 1.266rem;
+}
+
+td {
+    text-align: center;
+    padding:1.5rem .5rem;
+}
+
+
+/*-------------------------Premium Price Column-------------------------*/
+
+
+.price{
+
+td {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+sup{
+    font-size: 2rem;
+}
+
+p {
+    margin-top:0;
+    font-size: 1rem;
+    margin-bottom:2rem;
+}
+
+}
+.premium {
+    background-color: rgb(240 ,244, 241);
+    color:$primary-green-dark;
+}
+
+.premium-top {
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.premium-bottom {
+    border-bottom-left-radius:1rem;
+    border-bottom-right-radius: 1rem ;
+    margin-bottom: 1rem ;
+}
+
+.premium-btn {
+    display:flex;
+    flex-wrap: nowrap;
+    min-width: 11rem;
+    color:#fff;
+    border:solid $primary-green;
+    background-color:$primary-green;
+}
+
+.premium-btn:hover {
+    background-color: $primary-green-lgt;
+}
+
+
+
+
+
+/* -------------------------Table Footer-------------------------*/
+
+
+.uppercase {
+    text-transform: uppercase;
+
+
+td:not(.table-buttons) {
+    padding-top: 3rem;
+    padding-bottom:0;
+    margin-bottom:0;
+}
+
+}
+
+.table-button:not(.premium-btn) {
+    display: inline-block;
+    min-width:10rem;
+    padding:.5rem 2rem;
+    background-color:$white;
+    color:$primary-green;
+}
+
+.table-button:hover{
+    text-decoration: underline;
+}
+
+
+.table-buttons {
+    margin-bottom: 2rem;
+}
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - -  Call to action banner in reusable classes above - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - -  Footer in Reusable Classes above  - - - - - - - - - - - - - - - - - - - */
+
+
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - -  Pricing Adaptive Media Queries   - - - - - - - - - - - - - - - - - - - */
+
+
+
+
+@media only screen and (min-width:45rem){ /*- - - - - - - - - - - Pricing Tablet Adaptive Styles - - - - - - - - - - - -*/
+
+
+
+/* - - - - - - - - - - Pricing Banner - - - - - - - - - - -  */
+
+    
+.pricing-banner p {
+        font-size: 1.5rem;
+}
+
+/*- - - - - - - - - - -Pricing Table- - - - - - - - - - -*/
+
+
+/*--------------Head-------*/
+
+
+thead th {
+    font-size: 1.724rem;
+}
+
+
+/*-------------Body-----------*/
+
+
+tbody th {
+    font-size: 1.363rem;
+    min-width: 12rem;
+}
+
+td {
+    padding:1.5rem 2rem;
+}
+
+
+}
+
+
+
+@media only screen and (min-width:60rem){ /*- - - - - - - - - - - Pricing Laptop Adaptive Styles - - - - - - - - - - - -*/
+
+
+
+/* - - - - - - - - - - Pricing Banner - - - - - - - - - - -  */
+
+
+.pricing-banner p {
+    font-size: 1.95rem;
+}
+
+
+/*- - - - - - - - - - -Pricing Table- - - - - - - - - - -*/
+
+
+/*-------------------------Table Scroller-------------------------*/
+
+
+.table-scroller {
+        overflow: hidden;
+}
+
+
+/*--------------------- Head-------------------*/
+
+
+thead th {
+    font-size: 1.924rem;
+}
+
+
+/*---------------------Body--------------------*/
+
+
+tbody th {
+    font-size: 1.363rem;
+}
+
+td {
+    padding:1.5rem 4rem;
+}
+
+}

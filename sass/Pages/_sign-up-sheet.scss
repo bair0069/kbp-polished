@@ -1,0 +1,128 @@
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - -Header - - - - - - - - - - - - - - - - - - */
+
+.form-masthead .container {
+    padding:0;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - -Main - - - - - - - - - - - - - - - - - - */
+
+
+.form-main {
+    background-image:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)) ,url(/images/banners/hockey-goalie.jpg);
+    display:inline-block;
+}
+
+.sign-up-form .container {
+    align-items: center;
+    padding: 5.01rem 1rem;
+    text-align: left;
+}
+
+form {
+    background-color: #fff;
+    border-radius: .5rem;
+    padding:.5rem 1.2rem 1.5rem 1.2rem;
+    min-width:18rem;
+    width:min(35rem,100%);
+
+
+
+h1 {
+    justify-self: flex-start;
+    text-transform: capitalize;
+    margin-bottom:.75rem;
+    margin-top: 1rem;
+}
+
+}
+fieldset {
+    margin:0;
+    display:flex;
+    flex-direction: column;
+    gap:.75rem;
+    align-items:flex-start;
+    border:none;
+    padding:0;
+}
+
+.fn-ln {
+    width:100%;
+}
+
+input:not([type="checkbox"]) {
+    width:100%;
+    min-width: 16rem;
+    font-size: 1rem;
+    padding:.7rem 1.5rem;
+    border-radius: 1.75rem;
+    border:solid .0125rem rgb(190, 189, 189);
+}
+
+.checkbox-div {
+    margin-top: .5rem;
+}
+
+.form-btn {
+    width:8rem;
+    margin:.75rem 0rem;
+    background-color:#086b5c;
+    border:solid 1px #086b5c ;
+}
+
+.sign-up-form small {
+    font-size: smaller;
+    color:black;
+}
+
+
+
+// - - - - - - - - - - - - - - - - - - - - - - Footer - - - - - - - - - - - - - - -- - - - - - 
+
+
+@media only screen and (min-width:45rem) {
+    
+    
+/* - - - - - - - - - - - - - - - - - - - - - - -Main - - - - - - - - - - - - - - - - - - */
+
+
+.fn-ln {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    gap:1rem;
+}
+
+.first-name {
+    justify-self:flex-start ;
+}
+
+.last-name {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - Footer- - - - - - - - - - - - - - - - - - */
+
+
+.form-footer .container {
+    padding:1.5rem 0rem;;
+}
+
+
+}
+
+@media only screen and (min-width:60rem){
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - -Header - - - - - - - - - - - - - - - - - - */
+
+
+.form-masthead {
+    margin:1rem auto;
+}
+
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - -Sign-Up Page Ends - - - - - - - - - - - - - - - - - - */

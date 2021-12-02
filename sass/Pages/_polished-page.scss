@@ -1,0 +1,79 @@
+
+/* - - - - - - - - - - - - - - - - "Polished" content starts here (order of appearance) - - - - - - - - - - - - - - */
+
+/* ------------------------------    Page design "Mobile First"     -------------------------------- */
+
+/* - - - - - - - - - - - - - - - - - - - - - - -  Team Names Section  - - - - - - - - - - - - - - - - - - - */
+
+
+.team-names {
+    
+.container {
+    flex-flow:row wrap;
+    padding: 2rem 2.5rem;
+}
+
+ul {
+    padding:0rem;
+    margin: 0 auto;
+}
+
+ul li {
+    display:flex;
+    list-style-type: none;
+    padding:0;
+    margin-bottom:1.5rem;
+    width:15rem;
+}
+
+}
+
+
+@media only screen and (min-width:30em) {
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - -  Large Mobile Adaptive Logos    - - - - - - - - - - - - - - - - - - - */
+
+.team-names .container {
+    padding: 2rem 2rem;
+}
+
+
+}
+
+
+@media only screen and (min-width:45em) {  /*- - - - - - - - - Tablet Size Polished adaptive styles - - - - - - - - - - */
+
+    .team-names ul {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    gap: 3rem;
+    }
+
+}
+
+@media only screen and (min-width:60em) { /*- - - - - - - - - - - - - Laptop Adaptive styles - - - - - - - - - - */
+
+.team-names {
+
+.container {
+    width:100%;
+}
+
+ul {
+    display:flex;
+    width: min(80rem ,100%);
+    margin:0 auto;
+    justify-content: space-between;
+}
+
+li {
+    text-align:center;
+    padding:0;
+    width:min(10rem,100%)
+}
+
+}
+
+}

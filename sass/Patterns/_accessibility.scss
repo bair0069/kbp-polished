@@ -1,0 +1,66 @@
+@import "../Utilities/colours";
+
+/*---------------------------------Accessibility------------------------------- */
+
+
+
+*:focus-visible {
+    outline-width:  3px;
+    outline-style: solid;
+    outline-color: $color-accent ;
+    outline-offset: 2px;
+}
+
+
+.skip-links {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+
+a {
+    display:inline-block;
+    position: absolute;
+    top: -10rem;
+    left:2rem;
+    color: #fff;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem;
+    background-color:$color-accent;
+}
+    
+a:focus {
+    top: 0; 
+}
+    
+}
+
+.to-top {
+    position: fixed;
+    right: 4rem;
+    bottom:0rem;
+    color:var(--white);
+    background-color: $color-accent;
+    transform: translateY(100%);
+    transition:
+        transform .25s;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: .75rem 1rem;
+    border-radius: .5rem .5rem 0 0;
+}
+
+.to-top:focus {
+    transform: translateY(0);
+}
+
+
+
+.screen-reader-text {
+    color:black;
+    font-size: .1px;
+    clip-path: polygon(0 0 , 0 .1px , .1px .1px, .1px .1px);
+}
+

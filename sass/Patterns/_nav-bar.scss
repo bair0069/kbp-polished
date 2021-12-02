@@ -1,0 +1,125 @@
+@import "../Utilities/colours";
+@import "../Utilities/fonts";
+@import "../Utilities/type-scale";
+
+/* -----------------------------             Navigation bar                ------------------------ */
+
+
+/* ------------------------Masthead Sign-Up Button ---------------- */
+
+.masthead {
+    
+.small-btn:hover {
+    background-color: #066051;
+    color:#fff;
+}
+
+.small-btn:active {
+    background-color: rgb(165, 165, 165);
+    border:#f3f6f5;
+    color:#f3f6f5
+}
+
+.container{
+    padding:1rem 0rem;
+}
+
+}
+
+.nav{
+    display:flex;
+    flex-flow:column nowrap;
+
+
+ul {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+
+li {
+    margin-bottom:1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+@media only screen and (min-width:60em) { /*- - - - - - - - - - - - - Laptop Adaptive styles - - - - - - - - - - */
+
+    /* - - - - - - - - - - - - - - - - - - - - - - -  Laptop Adaptive Header      - - - - - - - - - - - - - - - - - - - */
+    
+    
+    
+    
+    .masthead {
+        width:min(65rem,100%);
+        margin:0 auto;
+    }
+    
+    
+    .masthead .container {
+        justify-content: space-around;
+        flex-flow:row nowrap;
+        padding:.5rem 1.25rem;
+    }
+    
+    .masthead .logo-wrap{
+        display:flex;
+        align-content: center;
+        justify-content: center;
+        margin:0;   
+    }
+    
+.logo {
+    max-width:12rem;
+    margin-right:2rem;
+}    
+
+.nav {
+    justify-content:flex-start;
+    flex-grow:1;
+    align-items: center;
+    flex-flow: row nowrap;
+
+
+ul {
+    display:flex;
+    flex-flow:row nowrap;
+    flex-grow:1;
+}
+
+li {
+    display:flex;
+    padding-left:1rem;
+    margin-bottom:0;
+    min-width:5rem;
+}
+
+
+.sign-in {
+    margin-left:auto;
+}
+
+.sign-up {
+    margin-left:0;
+    padding-left:0;
+}
+
+}
+
+#platform-tour {
+    min-width:8rem;
+}
+
+}

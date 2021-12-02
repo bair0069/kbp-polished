@@ -1,1376 +1,1299 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
-
-/* ----------------------------------------imports go above--------------------------------- */
-
-
-html {
-    box-sizing:border-box;
-}
-
-*,*::after,*::before {
-    box-sizing:inherit;
-}
-
-body {
-    background: white;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #000000;
-    margin-top:0%;
-    margin:0%;
-}
-
-img {
-    max-width:100%;
-}
-
-
-
-/* -----------------------------Colour Palette -------------------------- */
-
-:root {
---primary-green-lgt:#09a38c;
---primary-green-:#066051;
---primary-green-dark:#043a31;
---color-accent:#a00303;
---white:#fff;
-}
-
 /*---------------------------------Accessibility------------------------------- */
-
-
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 *:focus-visible {
-    outline: 3px solid var(--color-accent);
-    outline-offset: 2px;
+  outline-width: 3px;
+  outline-style: solid;
+  outline-color: #a00303;
+  outline-offset: 2px;
 }
 
-
-.skip-links{
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
+.skip-links {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
-
 .skip-links a {
-    display:inline-block;
-    position: absolute;
-    top: -10rem;
-    left:2rem;
-    color: #fff;
-    font-size: 1.25rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1rem;
-    background-color: var(--color-accent);
+  display: inline-block;
+  position: absolute;
+  top: -10rem;
+  left: 2rem;
+  color: #fff;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem;
+  background-color: #a00303;
 }
-    
 .skip-links a:focus {
-    top: 0; 
+  top: 0;
 }
-    
-    
+
 .to-top {
-    position: fixed;
-    right: 4rem;
-    bottom:0rem;
-    color:var(--white);
-    background-color: var(--color-accent);
-    transform: translateY(100%);
-    transition:
-        transform .25s;
-    text-transform: uppercase;
-    font-size: 1rem;
-    padding: .75rem 1rem;
-    border-radius: .5rem .5rem 0 0;
+  position: fixed;
+  right: 4rem;
+  bottom: 0rem;
+  color: var(--white);
+  background-color: #a00303;
+  transform: translateY(100%);
+  transition: transform 0.25s;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem 0.5rem 0 0;
 }
-    
+
 .to-top:focus {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
 .screen-reader-text {
-    color:black;
-    font-size: .1px;
-    clip-path: polygon(0 0 , 0 .1px , .1px .1px, .1px .1px);
+  color: black;
+  font-size: 0.1px;
+  clip-path: polygon(0 0, 0 0.1px, 0.1px 0.1px, 0.1px 0.1px);
 }
-
-
-
-/* ------------------------------------this is where the mobile type scale is set------------------ */
-
-
-html {
-    font-size:100%;
-}
-
-h1, h2, h3, h4, h5 {
-    margin: 1rem 0 1.38rem;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 400;
-    line-height: 1.5;
-}
-
-h1 {
-    padding-top:0%;
-    margin-top: 0%;
-    margin-bottom:.5rem;
-    font-size: 1.802rem;
-    text-align: center;
-    color:var(--primary-green-);
-    text-transform: uppercase;
-}
-
-h2 {
-    font-size: 1.602rem;
-    text-transform: uppercase;
-}
-
-h3 {
-    font-size: 1.424rem;
-    font-weight: 900;
-}
-
-h4 {
-    font-size: 1.266rem;
-    text-transform: uppercase;
-    font-weight: 900;
-}
-
-h5 {font-size: 1.125rem;
-    border-bottom: solid .045rem #e9eceb;
-    color:var(--primary-green-);
-    font-weight: 700;
-}
-
-h6{
-    font-size: 1.3rem;
-    font-weight: normal; 
-    text-transform: uppercase;
-    margin-top:0;
-    margin-bottom:1.5rem;
-}
-
-p {
-    font-size:1.3rem;
-    text-transform: none;
-    font-weight: normal;
-    font-family: "Ubuntu",sans-serif;
-
-}
-
-a {
-    color:var(--primary-green-);
-    text-decoration:underline;
-    transition: .5s;
-}
-
-
-small, .text_small {
-    font-size: 0.889rem;
-}
-
-/* - - - - - - - - - - - - - - - - - - - - - Re-Usable Classes (alphabetical order by type)- - - - - - - - - - - - - - - - - - - -  */
-
-
-
-/* ----------------------                 Banners                 -----------------------------*/
-
-
-
-.banner {
-    display:flex;
-    text-align:center;
-    color:#f3f6f5;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight:lighter;
-    background-position: center;
-    background-size: cover;
-    width:100%;
-}    
-
-.banner p {
-    font-size:1.5rem;
-    line-height:1.5;
-    margin: 0 0 1rem 0;
-}
-
-.banner-header {
-    display:flex;
-    align-self: center;
-    text-transform: uppercase;
-    line-height:1.15;
-}
-
-.slideIn , .hero-banner p {
-    transition:
-    transform:translateX(-5rem);
-    opacity:0;
-    animation:slideIn .5s .7s forwards;
-    ;
-}
-
-@keyframes slideIn { 
-    from{transform:translateX(-5rem);
-    opacity: 0;}
-    
-    to{
-        transform:translateX(0);
-        opacity:1;
-    }
-}
-
-.banner .container {
-    padding: 5rem 1.2rem;
-}
-
-
-/*-----------------------call to action banner-----------------------------*/
-
-
-.call-to-action {
-    background-image:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)) ,url(/images/banners/soccer-banner-bw.jpg);
-}
-
-
-
-/* ------------------------------                 Buttons      ------------------------------------------------ */
-
-
-
 
 /* ---------------light-green  sign-up button------------ */
-
-
 .btn-lgt-green {
-    border-color:#09a38c;
-    color:var(--primary-green-lgt);
+  border-color: #09a38c;
+  color: #09a38c;
 }
 
 .btn-lgt-green:hover,
 .btn-lgt-green:focus {
-    background-color:#f3f6f5;
+  background-color: #f3f6f5;
 }
 
 .btn-lgt-green:active {
-    background-color: rgb(165, 165, 165);
-    border:solid #f3f6f5;
-    color:#f3f6f5;
+  background-color: #a5a5a5;
+  border: solid #f3f6f5;
+  color: #f3f6f5;
 }
 
-
 /* --------------primary -green #066051 sign up button---------------- */
-
-
 .btn-pri-green {
-    border:#066051;
+  border: #066051;
 }
 
 .btn-pri-green:hover,
 .btn-pri-green:focus {
-    background-color:#f3f6f5;
+  background-color: #f3f6f5;
 }
 
 .btn-pri-green:active {
-    background-color: rgb(165, 165, 165);
-    border:#f3f6f5;
-    color:#f3f6f5
+  background-color: #a5a5a5;
+  border: #f3f6f5;
+  color: #f3f6f5;
 }
-
-
 
 /* -------------------------sign up button -------------------- */
-
-
 .sign-up-btn {
-    padding:.75rem 3rem .75rem 3rem;
-    text-decoration:none;
-    text-align:center;
-    border-radius:2rem;
-    border-width:.5px;
-    font-size:1.35rem;
-    font-family:"Ubuntu" ,sans-serif;
-    border:solid;
+  padding: 0.75rem 3rem 0.75rem 3rem;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 2rem;
+  border-width: 0.5px;
+  font-size: 1.35rem;
+  font-family: "Ubuntu", sans-serif;
+  border: solid;
 }
-
 
 /* ---------------------------small sign up button---------------- */
-
-
 .small-btn {
-    margin-top: 0px;
-    padding:.45rem 1.85rem .45rem 1.85rem;
-    font-weight: lighter;
-    font-size: 1rem;
-    min-width:8rem;
+  margin-top: 0px;
+  padding: 0.45rem 1.85rem 0.45rem 1.85rem;
+  font-weight: lighter;
+  font-size: 1rem;
+  min-width: 8rem;
 }
 
-
 /* ------------------- white sign-up button  #f3f6f5-------------------------------- */
-
-
 .btn-white {
-    border:#f3f6f5 solid;
-    color:#f3f6f5; 
+  border: #f3f6f5 solid;
+  color: #f3f6f5;
 }
 
 .btn-white:hover,
 .btn-white:focus {
-    background-color:#f3f6f5;
-    color:#09a38c;
-    border:solid #09a38c;
+  background-color: #f3f6f5;
+  color: #09a38c;
+  border: solid #09a38c;
 }
 
 .btn-white:active {
-    background-color:rgb(165, 165, 165) ;
-    color:#f3f6f5;
-    border:solid #f3f6f5;
+  background-color: #a5a5a5;
+  color: #f3f6f5;
+  border: solid #f3f6f5;
 }
-
-
-
-/* ------------------------------          Containers          ---------------------------- */
-
-
-
-
-.container {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    width:min(80rem,100%);
-    margin:0 auto;
-    text-align:center;
-    
-}
-
-
-/* ---------------------------------------      Footer / Sub Footer     ---------------------------------------- */
-
-
-
-.footer {
-    background-color:var(--primary-green-);
-}
-
-.footer .container {
-    background-color:var(--primary-green-);
-    color:#fff;
-    padding:1.25rem;
-    width:100%;
-}
-
-
-.footer .logo {
-    margin:0 auto;
-    margin-bottom:.75rem
-}
-
-.footer .footer-btn {
-    margin:1rem 0rem 0rem 0rem;
-}
-
-.sub-footer {
-    background-color:#044438;
-}
-
-.sub-footer .container{
-
-    background-color:#044438;
-    color:#fff;
-    width:100%;
-}
-
-.sub-footer ul{
-    display:flex;
-    justify-content: center;
-    gap:1.5rem;
-    list-style-type: none;
-    margin:0;
-    padding:0;
-    padding-top:.75rem;
-    font-size:smaller;
-    color:#fff
-}
-.sub-footer li a{
-    color:#fff;
-    text-decoration:none;
-}
-
-.sub-footer li a:hover {
-    text-decoration: underline;
-}
-
-
-.social-media-icons {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width:max(25%,10rem);
-    gap:2.5rem;
-    padding:0;
-    fill:white;
-}
-
-.social-media-icons li {
-    width:50%;
-    list-style-type: none;
-}
-
-.social-media-icons svg {
-    transition: .3s;
-    cursor:alias
-}
-
-#snapchat:hover {
-    fill:rgb(253, 255, 10);
-}
-
-#youtube:hover,#youtube:focus {
-    fill:rgb(239, 0 ,9);
-}
-
-#twitter:hover,#twitter:focus{
-    fill:rgb(43, 134, 236)
-}
-
-/* -----------------------------             Navigation bar                ------------------------ */
-
-
-
-/* ----------------------------- Polished Logo----------------- */
-
-.logo {
-    display:inline-block;
-    width:12rem;
-}
-
-.logo:hover{
-    opacity: .6;
-    transition: .4s;
-}
-
-.logo-wrap {
-    margin:1rem;
-}
-
-/* ------------------------Masthead Sign-Up Button ---------------- */
-
-.masthead .small-btn:hover {
-    background-color: #066051;
-    color:#fff;
-}
-
-.masthead .small-btn:active {
-    background-color: rgb(165, 165, 165);
-    border:#f3f6f5;
-    color:#f3f6f5
-}
-
-.masthead .container{
-    padding:1rem 0rem;
-}
-
-.nav{
-    display:flex;
-    flex-flow:column nowrap;
-}
-
-.nav ul {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    list-style-type: none;
-    padding:0;
-    margin:0;
-}
-
-.nav li {
-    margin-bottom:1rem;
-}
-
-.nav a {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* - - - - - - - - - - - - - - - - "Polished" content starts here (order of appearance) - - - - - - - - - - - - - - */
-
-/* ------------------------------    Page design "Mobile First"     -------------------------------- */
-
-
-/* - - - - - - - - - - - - - - - - - - - - - - -  Header in Reusable Classes above - - - - - - - - - - - - - - - - - - - */
-
-
-
-/* - - - - - - - - - - - - - - - - - - - - - - -      Main      - - - - - - - - - - - - - - - - - - - */
-
-
-
-
-/* - - - - - - - - - - - - - - - - - - - - - - -  Hero-Banner   - - - - - - - - - - - - - - - - - - - */
-
-
-
-.hero-banner {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)),url(/images/banners/hero-home.jpg);
-}
-
-.hero-banner .container{
-    padding:9rem 2rem;
-}
-
-
-/* - - - - - - - - - - - - - - - - - - - - - - -  Team Names Section  - - - - - - - - - - - - - - - - - - - */
-
-
-.team-names .container {
-    flex-flow:row wrap;
-    padding: 2rem 2.5rem;
-}
-
-.team-names ul {
-padding:0rem;
-margin: 0 auto;
-}
-
-.team-names ul li {
-    display:flex;
-    list-style-type: none;
-    padding:0;
-    margin-bottom:1.5rem;
-    width:15rem;
-}
-
-/* - - - - - - - - - - - - - - - - - - - - - - -  Platform Section - - - - - - - - - - - - - - - - - - - */
-
-
-
-.platform {
-    text-align: center;
-    width:100%;
-    color:black;
-    font-family:sans-serif;
-}
-.platform .container{
-    padding:5rem 1.5rem;
-}
-.platform p {
-    font-size: 1.25rem;
-}
-.platform img{
-    margin-bottom:2rem;
-    width:100%;
-}
-
-
-/* - - - - - - - - - - - - - - - - - - - - - - -  Call to action banner in reusable classes above - - - - - - - - - - - - - - - - - - - */
-
-/* - - - - - - - - - - - - - - - - - - - - - - -  Footer in Reusable Classes above  - - - - - - - - - - - - - - - - - - - */
-
-
-
-/* - - - - - - - - - - - - - - - - - - - - - - -  Adaptive Media Queries   - - - - - - - - - - - - - - - - - - - */
-
-
-@media only screen and (min-width:30em) {
-
-
-/* - - - - - - - - - - - - - - - - - - - - - - -      Main      - - - - - - - - - - - - - - - - - - - */
-
-
-
-
-/* - - - - - - - - - - - - - - - - - - - - - - -  Large Mobile Adaptive Logos    - - - - - - - - - - - - - - - - - - - */
-
-.team-names .container {
-    padding: 2rem 2rem;
-}
-
-
-}
-
-
-
-@media only screen and (min-width:45em) {  /*- - - - - - - - - Tablet Size Polished adaptive styles - - - - - - - - - - */
-    
-
-/* - - - - - - - - - - - - - - - - - - - - - - -   Tablet   Type Scale     - - - - - - - - - - - - - - - - - - - */
-
-
-
-
 
 html {
-    font-size:100%
+  font-size: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 1rem 0 1.38rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 h1 {
-    font-size: 2.488rem;
+  padding-top: 0%;
+  margin-top: 0%;
+  margin-bottom: 0.5rem;
+  font-size: 1.802rem;
+  text-align: center;
+  color: #066051;
+  text-transform: uppercase;
 }
 
 h2 {
-    font-size: 2.074rem;
+  font-size: 1.602rem;
+  text-transform: uppercase;
 }
 
 h3 {
-    font-size: 1.728rem;
+  font-size: 1.424rem;
+  font-weight: 900;
 }
 
 h4 {
-    font-size: 1.44rem;
+  font-size: 1.266rem;
+  text-transform: uppercase;
+  font-weight: 900;
 }
 
 h5 {
-    font-size: 1.125rem;
+  font-size: 1.125rem;
+  border-bottom: solid 0.045rem #e9eceb;
+  color: #066051;
+  font-weight: 700;
 }
 
-h6,p {
-    font-size: 1rem;
+h6 {
+  font-size: 1.3rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-size: 1.3rem;
+  text-transform: none;
+  font-weight: normal;
+  font-family: "Ubuntu", sans-serif;
+}
+
+a {
+  color: #066051;
+  text-decoration: underline;
+  transition: 0.5s;
 }
 
 small, .text_small {
+  font-size: 0.889rem;
+}
+
+@media only screen and (min-width: 45em) {
+  /*- - - - - - - - - Tablet Size Polished adaptive styles - - - - - - - - - - */
+  /* - - - - - - - - - - - - - - - - - - - - - - -   Tablet   Type Scale     - - - - - - - - - - - - - - - - - - - */
+  html {
+    font-size: 100%;
+  }
+
+  h1 {
+    font-size: 2.488rem;
+  }
+
+  h2 {
+    font-size: 2.074rem;
+  }
+
+  h3 {
+    font-size: 1.728rem;
+  }
+
+  h4 {
+    font-size: 1.44rem;
+  }
+
+  h5 {
+    font-size: 1.125rem;
+  }
+
+  h6, p {
+    font-size: 1rem;
+  }
+
+  small, .text_small {
     font-size: 0.833rem;
+  }
+}
+@media only screen and (min-width: 60em) {
+  /*- - - - - - - - - - - - - Laptop Adaptive styles - - - - - - - - - - */
+  /* - - - - - - - - - - - - - - - - - - - - - - -     Laptop Type Scale     - - - - - - - - - - - - - - - - - - - */
+  html {
+    font-size: 100%;
+  }
+
+  h1 {
+    font-size: 3.052rem;
+  }
+
+  h2 {
+    font-size: 2.441rem;
+  }
+
+  h3 {
+    font-size: 1.953rem;
+  }
+
+  h4 {
+    font-size: 1.563rem;
+  }
+
+  h5 {
+    font-size: 1.4rem;
+  }
+
+  h6, p {
+    font-size: 1.3rem;
+  }
+
+  small {
+    font-size: 0.8rem;
+  }
+}
+/* ----------------------                 Banners                 -----------------------------*/
+.banner, .container {
+  display: flex;
+  text-align: center;
+  color: #f3f6f5;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
 }
 
-
-/* - - - - - - - - - - - - - - - - - - - - - - -      Main      - - - - - - - - - - - - - - - - - - - */
-
-
-
-/* - - - - - - - - - - - - - - - - - - - - - - -  Tablet Adaptive Logos    - - - - - - - - - - - - - - - - - - - */
-
-
-.team-names ul{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    grid-template-rows:1fr 1fr;
-    gap: 3rem;
+.banner p, .container p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin: 0 0 1rem 0;
 }
 
+.banner-header {
+  display: flex;
+  align-self: center;
+  text-transform: uppercase;
+  line-height: 1.15;
 }
 
+.slideIn, .hero-banner p {
+  transform: translateX(-5rem);
+  opacity: 0;
+  animation: slideIn 0.5s 0.7s forwards;
+}
 
-@media only screen and (min-width:60em) { /*- - - - - - - - - - - - - Laptop Adaptive styles - - - - - - - - - - */
+@keyframes slideIn {
+  from {
+    transform: translateX(-5rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.container {
+  padding: 5rem 1.2rem;
+}
 
+/* ------------------------------          Containers          ---------------------------- */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(80rem, 100%);
+  margin: 0 auto;
+  text-align: center;
+}
 
+/*-----------------------call to action banner-----------------------------*/
+.call-to-action {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/images/banners/soccer-banner-bw.jpg);
+}
 
-/* - - - - - - - - - - - - - - - - - - - - - - -     Laptop Type Scale     - - - - - - - - - - - - - - - - - - - */
+@media only screen and (min-width: 60em) {
+  /*- - - - - - - - - - - - - Laptop Adaptive styles - - - - - - - - - - */
+  .call-to-action .banner-header {
+    padding: 0 8rem;
+  }
+}
+/* ---------------------------------------      Footer / Sub Footer     ---------------------------------------- */
+.footer {
+  background-color: #066051;
+}
+.footer .container {
+  background-color: #066051;
+  color: #fff;
+  padding: 1.25rem;
+  width: 100%;
+}
+.footer .logo {
+  margin: 0 auto;
+  margin-bottom: 0.75rem;
+}
+.footer .footer-btn {
+  margin: 1rem 0rem 0rem 0rem;
+}
 
+.sub-footer {
+  background-color: #043a31;
+}
+.sub-footer .container {
+  background-color: #043a31;
+  color: #fff;
+  width: 100%;
+}
+.sub-footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 0.75rem;
+  font-size: smaller;
+  color: #fff;
+}
+.sub-footer li a {
+  color: #fff;
+  text-decoration: none;
+}
+.sub-footer li a:hover {
+  text-decoration: underline;
+}
 
+.social-media-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: max(25%, 10rem);
+  gap: 2.5rem;
+  padding: 0;
+  fill: #fff;
+}
+.social-media-icons li {
+  width: 50%;
+  list-style-type: none;
+}
+.social-media-icons svg {
+  transition: 0.3s;
+  cursor: alias;
+}
 
+#snapchat:hover {
+  fill: #fdff0a;
+}
 
+#youtube:hover, #youtube:focus {
+  fill: #ef0009;
+}
 
+#twitter:hover, #twitter:focus {
+  fill: #2b86ec;
+}
+
+@media only screen and (min-width: 60em) {
+  /*- - - - - - - - - - - - - Laptop Adaptive styles - - - - - - - - - - */
+  /* - - - - - - - - - - - - - - - - - - - - - - -   Laptop Adaptive Footer     - - - - - - - - - - - - - - - - - - - */
+  .footer .container {
+    flex-direction: row;
+    justify-content: space-between;
+    width: min(65rem, 100%);
+  }
+  .footer .logo {
+    display: flex;
+    margin: 0;
+    margin-bottom: 0;
+  }
+  .footer .footer-btn {
+    margin: 0;
+  }
+
+  .sub-footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: smaller;
+  }
+  .sub-footer li {
+    padding-left: 1.25rem;
+  }
+}
 html {
-    font-size:100%;
+  font-size: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 1rem 0 1.38rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 h1 {
-    font-size: 3.052rem;
+  padding-top: 0%;
+  margin-top: 0%;
+  margin-bottom: 0.5rem;
+  font-size: 1.802rem;
+  text-align: center;
+  color: #066051;
+  text-transform: uppercase;
 }
+
 h2 {
-    font-size: 2.441rem;
+  font-size: 1.602rem;
+  text-transform: uppercase;
 }
 
 h3 {
-    font-size: 1.953rem;
+  font-size: 1.424rem;
+  font-weight: 900;
 }
 
 h4 {
-    font-size: 1.563rem;
+  font-size: 1.266rem;
+  text-transform: uppercase;
+  font-weight: 900;
 }
 
 h5 {
+  font-size: 1.125rem;
+  border-bottom: solid 0.045rem #e9eceb;
+  color: #066051;
+  font-weight: 700;
+}
+
+h6 {
+  font-size: 1.3rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-size: 1.3rem;
+  text-transform: none;
+  font-weight: normal;
+  font-family: "Ubuntu", sans-serif;
+}
+
+a {
+  color: #066051;
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+small, .text_small {
+  font-size: 0.889rem;
+}
+
+@media only screen and (min-width: 45em) {
+  /*- - - - - - - - - Tablet Size Polished adaptive styles - - - - - - - - - - */
+  /* - - - - - - - - - - - - - - - - - - - - - - -   Tablet   Type Scale     - - - - - - - - - - - - - - - - - - - */
+  html {
+    font-size: 100%;
+  }
+
+  h1 {
+    font-size: 2.488rem;
+  }
+
+  h2 {
+    font-size: 2.074rem;
+  }
+
+  h3 {
+    font-size: 1.728rem;
+  }
+
+  h4 {
+    font-size: 1.44rem;
+  }
+
+  h5 {
+    font-size: 1.125rem;
+  }
+
+  h6, p {
+    font-size: 1rem;
+  }
+
+  small, .text_small {
+    font-size: 0.833rem;
+  }
+}
+@media only screen and (min-width: 60em) {
+  /*- - - - - - - - - - - - - Laptop Adaptive styles - - - - - - - - - - */
+  /* - - - - - - - - - - - - - - - - - - - - - - -     Laptop Type Scale     - - - - - - - - - - - - - - - - - - - */
+  html {
+    font-size: 100%;
+  }
+
+  h1 {
+    font-size: 3.052rem;
+  }
+
+  h2 {
+    font-size: 2.441rem;
+  }
+
+  h3 {
+    font-size: 1.953rem;
+  }
+
+  h4 {
+    font-size: 1.563rem;
+  }
+
+  h5 {
     font-size: 1.4rem;
-}
+  }
 
-h6,p {
+  h6, p {
     font-size: 1.3rem;
-}
+  }
 
-small {
+  small {
     font-size: 0.8rem;
-} 
-
-
-/* - - - - - - - - - - - - - - - - - - - - - - -  Laptop Adaptive Header      - - - - - - - - - - - - - - - - - - - */
-
-
-
-
-.masthead {
-    width:min(65rem,100%);
-    margin:0 auto;
+  }
 }
-
-
+/* -----------------------------             Navigation bar                ------------------------ */
+/* ------------------------Masthead Sign-Up Button ---------------- */
+.masthead .small-btn:hover {
+  background-color: #066051;
+  color: #fff;
+}
+.masthead .small-btn:active {
+  background-color: #a5a5a5;
+  border: #f3f6f5;
+  color: #f3f6f5;
+}
 .masthead .container {
-    justify-content: space-around;
-    flex-flow:row nowrap;
-    padding:.5rem 1.25rem;
+  padding: 1rem 0rem;
 }
-
-.masthead .logo-wrap{
-    display:flex;
-    align-content: center;
-    justify-content: center;
-    margin:0;   
-}
-
-.logo {
-    max-width:12rem;
-    margin-right:2rem;
-}    
 
 .nav {
-    justify-content:flex-start;
-    flex-grow:1;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  margin-bottom: 1rem;
+}
+.nav a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 60em) {
+  /*- - - - - - - - - - - - - Laptop Adaptive styles - - - - - - - - - - */
+  /* - - - - - - - - - - - - - - - - - - - - - - -  Laptop Adaptive Header      - - - - - - - - - - - - - - - - - - - */
+  .masthead {
+    width: min(65rem, 100%);
+    margin: 0 auto;
+  }
+
+  .masthead .container {
+    justify-content: space-around;
+    flex-flow: row nowrap;
+    padding: 0.5rem 1.25rem;
+  }
+
+  .masthead .logo-wrap {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .logo {
+    max-width: 12rem;
+    margin-right: 2rem;
+  }
+
+  .nav {
+    justify-content: flex-start;
+    flex-grow: 1;
     align-items: center;
     flex-flow: row nowrap;
-}
-
-.nav ul {
-    display:flex;
-    flex-flow:row nowrap;
-    flex-grow:1;
-}
-
-.nav li {
-    display:flex;
-    padding-left:1rem;
-    margin-bottom:0;
-    min-width:5rem;
-}
-
-#platform-tour {
-    min-width:8rem;
-}
-
-.nav .sign-in {
-    margin-left:auto;
-}
-
-.nav .sign-up {
-    margin-left:0;
-    padding-left:0;
-}
-
-
-/* - - - - - - - - - - - - - - - - - - - - - - -      Main      - - - - - - - - - - - - - - - - - - - */
-
-
-/* - - - - - - - - - - - - - - - - - - - - - - -  Laptop Adaptive Logos    - - - - - - - - - - - - - - - - - - - */
-
-
-.team-names .container {
-    width:100%;
-}
-
-.team-names ul {
-    display:flex;
-    width: min(80rem ,100%);
-    margin:0 auto;
-    justify-content: space-between;
-}
-
-.team-names li {
-    text-align:center;
-    padding:0;
-    width:min(10rem,100%)
-}
-
-
-/* - - - - - - - - - - - - - - - - - - - - - - -  Laptop Adaptive Platform Banner      - - - - - - - - - - - - - - - - - - - */
-
-
-.platform .container {
-    width:50%;
-    padding:5rem 1.5rem;
-}
-
-.platform h2 {
-    padding: 0 2rem;
-}
-
-/* - - - - - - - - - - - - - - - - - - - - - - -  Laptop Adaptive Call to Action Banner      - - - - - - - - - - - - - - - - - - - */
-
-
-.call-to-action .banner-header {
-    padding:0 8rem;
-}
-
-
-/* - - - - - - - - - - - - - - - - - - - - - - -   Laptop Adaptive Footer     - - - - - - - - - - - - - - - - - - - */
-
-
-
-.footer .container {
-    flex-direction: row;
-    justify-content: space-between;
-    width:min(65rem,100%);
-}
-
-.footer .logo {
+  }
+  .nav ul {
     display: flex;
-    margin:0;
-    margin-bottom:0;
+    flex-flow: row nowrap;
+    flex-grow: 1;
+  }
+  .nav li {
+    display: flex;
+    padding-left: 1rem;
+    margin-bottom: 0;
+    min-width: 5rem;
+  }
+  .nav .sign-in {
+    margin-left: auto;
+  }
+  .nav .sign-up {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  #platform-tour {
+    min-width: 8rem;
+  }
+}
+/* - - - - - - - - - - - - - - - - - - - - - - -  Hero-Banner   - - - - - - - - - - - - - - - - - - - */
+.hero-banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/banners/hero-home.jpg);
+}
+.hero-banner .container {
+  padding: 9rem 2rem;
 }
 
-.sub-footer ul {
-    list-style-type: none;
-    margin:0;
-    padding:0;
-    font-size:smaller;
+/* ----------------------------- Polished Logo----------------- */
+.logo {
+  display: inline-block;
+  width: 12rem;
 }
 
-.sub-footer li {
-    padding-left:1.25rem;
+.logo:hover {
+  opacity: 0.6;
+  transition: 0.4s;
 }
 
-.footer .footer-btn {
-    margin:0;
+.logo-wrap {
+  margin: 1rem;
 }
 
-
+.platform {
+  text-align: center;
+  width: 100%;
+  font-family: sans-serif;
+}
+.platform .container {
+  color: black;
+  padding: 5rem 1.5rem;
+}
+.platform p {
+  font-size: 1.25rem;
+}
+.platform img {
+  margin-bottom: 2rem;
+  width: 100%;
 }
 
+@media only screen and (min-width: 60em) {
+  .platform .container {
+    width: 50%;
+    padding: 5rem 1.5rem;
+  }
 
-/* - - - - - - - - - - - - - - - - - - - - - - -Polished Page Ends - - - - - - - - - - - - - - - - - - */
-
-
-
-
-
-
-
-
-/*- - - - - - - - - - - - - - - - - - - - - - - Platform Tour Page Begins - - - - - - - - - - - - - - - - - - - */
- /* ----------------------------*****             Mobile First           *****-------------------------- */
-
-
-/* - - - - - - - - - - - - - - - - - - - - - - -      Main    - - - - - - - - - - - - - - - - - - - */
-
-
-
-/* - - - - - - - - - - - - - - - - - - - - - - -     Banner      - - - - - - - - - - - - - - - - - - - */
-
-
-/* -----------------------Platform tour banner "next level design"--------------- */
-
-
-.platform-tour-page .platform-tour {
-    background-image:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.45)), url(/Images/banners/hero-platform.jpg);
-    text-align:center;
+  .platform h2 {
+    padding: 0 2rem;
+  }
+}
+/* - - - - - - - - - - - - - - - - "Polished" content starts here (order of appearance) - - - - - - - - - - - - - - */
+/* ------------------------------    Page design "Mobile First"     -------------------------------- */
+/* - - - - - - - - - - - - - - - - - - - - - - -  Team Names Section  - - - - - - - - - - - - - - - - - - - */
+.team-names .container {
+  flex-flow: row wrap;
+  padding: 2rem 2.5rem;
+}
+.team-names ul {
+  padding: 0rem;
+  margin: 0 auto;
+}
+.team-names ul li {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  width: 15rem;
 }
 
-.platform-tour #platform-tour-hero {
-    color:#fff
+@media only screen and (min-width: 30em) {
+  /* - - - - - - - - - - - - - - - - - - - - - - -  Large Mobile Adaptive Logos    - - - - - - - - - - - - - - - - - - - */
+  .team-names .container {
+    padding: 2rem 2rem;
+  }
 }
-
-.platform-tour {
-    margin-bottom:3rem;
+@media only screen and (min-width: 45em) {
+  /*- - - - - - - - - Tablet Size Polished adaptive styles - - - - - - - - - - */
+  .team-names ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3rem;
+  }
 }
-
-
-/* - - - - - - - - - - - - - - - - - - - - - - -      Polished + Platform    - - - - - - - - - - - - - - - - - - - */
-
-
-
-.polished-platform {
-    padding:0rem 1.5rem;
-    margin-bottom: 6rem;
+@media only screen and (min-width: 60em) {
+  /*- - - - - - - - - - - - - Laptop Adaptive styles - - - - - - - - - - */
+  .team-names .container {
+    width: 100%;
+  }
+  .team-names ul {
+    display: flex;
+    width: min(80rem, 100%);
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  .team-names li {
+    text-align: center;
+    padding: 0;
+    width: min(10rem, 100%);
+  }
 }
-
-.polished-header {
-    text-align:left;
-}
-
-.polished-content {
-    text-align: left;
-    margin-top:0;
-}
-
-.polished-platform img {
-    margin-bottom:1rem;
-}
-
-/* - - - - - - - - - - - - - - - - - - - - - - -  Call to action banner in reusable classes above - - - - - - - - - - - - - - - - - - - */
-
-
-/* - - - - - - - - - - - - - - - - - - - - - - -  Footer in Reusable Classes above  - - - - - - - - - - - - - - - - - - - */
-
-
-
-@media only screen and (min-width:30em) { /*- - - - - - - Large mobile platform tour - - - - - - - */
-
-
-/* - - - - - - - - - - - - - - - - - - - - - - -      Banner      - - - - - - - - - - - - - - - - - - - */
-
-
-.platform-tour-page .platform-tour {
-    padding:3.5rem 1rem;
-}
-
-/* - - - - - - - - - - - - - - - - - - - - - - -      Main      - - - - - - - - - - - - - - - - - - - */
-
-
-/* ---------------large mobile adaptive polished  + grid container------------------ */
-
-
-    .polished-grid-container img {
-    width:min(25rem,100%);
-}
-
-}
-
-
-@media only screen and (min-width:45em) { /*- - - - - - - - - - Tablet Adaptive Platform Tour - - - - - - */
-
-
-    /* - - - - - - - - - - - - - - - - - - - - - - -      Main      - - - - - - - - - - - - - - - - - - - */
-
-
-
-/* ---------------tablet polished platform grid container------------------ */
-
-
-.polished-grid-container {
-    display:grid;
-    grid-template-columns: 1fr 5rem 1fr;
-    grid-template-areas:
-    "cont . img"
-    "p . img";
-    width:min(55rem,100%);
-    justify-self:center;
-    margin-bottom:6rem;
-}
-
-.polished-grid-container:nth-child(2n) {
-    grid-template-areas:
-    "img . cont"
-    "img . p";
-}
-
-.polished-header {
-    grid-area:cont;
-    align-self: flex-end;
-}
-
-.polished-content {
-    grid-area:p;
-}
-
-.polished-grid-container img {
-    grid-area:img;
-    width:100%;
-}
-
-}
-
-
-@media only screen and (min-width:60em) { /*- - - - - - - - - - - - Laptop Adaptive Platform Tour - - - - - - - - - - - */
-
-/* - - - - - - - - - - - - - - - - - - - - - - -      Banner      - - - - - - - - - - - - - - - - - - - */
-
-
-
-.platform-tour-page .platform-tour{
-    padding: 5.25rem 2rem;
-}
-
-}
-
-
-
-
-
- /* - - - - - - - - - - - - - - - - - - - - - - - Platform Tour Page Ends - - - - - - - - - - - - - - - - - - - - - */
-
-
-
-
-
-
-
-
-/* - - - - - - - - - - - - - - - - - - - - - - - - - Pricing Page Begins -  - - - - - - - - - - - - - - - - - - - - */
 /* ---------------------------------Mobile First-------------------------------------- */
-
-
 /* - - - - - - - - - - - - - - - - - - - - - - -      Pricing Banner     - - - - - - - - - - - - - - - - - - - */
-
-
-
 .pricing-banner p {
-    color:black;
-    font-size: 1.35rem;
+  color: black;
+  font-size: 1.35rem;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - -  Pricing Table Section  - - - - - - - - - - - - - - - - - - - */
-
-
 /* ------------------------- Table Containers ------------------------- */
-
-
 .pricing-table .container {
-    flex-direction: row;
-    justify-content: center;
-    padding:2rem 1rem;
-    margin-bottom: 5rem;
-    width:100%;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2rem 1rem;
+  margin-bottom: 5rem;
+  width: 100%;
 }
 
 .table-scroller {
-    overflow-x: scroll;
-    max-width: 100%;
+  overflow-x: scroll;
+  max-width: 100%;
 }
 
 /* -------------------------Table -------------------------*/
-
 table {
-    display:contents;
-    width:100%;
-    border-collapse: collapse;
-    overflow: hidden;
+  font-family: Ubuntu, sans-serif;
+  display: contents;
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  color: black;
 }
-
 
 /* -------------------------Table  Head -------------------------*/
-
-
 thead th {
-    padding-top:1.5rem;
-    text-align: center;
-    font-size:1.424rem;
+  padding-top: 1.5rem;
+  text-align: center;
+  font-size: 1.424rem;
 }
 
-
 /*-------------------------Table Body-------------------------*/
-
-
 tbody th, tbody td {
-    border-bottom:.025rem rgba(204, 203, 203, 0.438) solid;
+  border-bottom: 0.025rem rgba(204, 203, 203, 0.438) solid;
 }
 
 tbody th {
-    min-width: 11rem;
-    text-align: left;
-    font-size: 1.266rem;
+  min-width: 11rem;
+  text-align: left;
+  font-size: 1.266rem;
 }
 
 td {
-    text-align: center;
-    padding:1.5rem .5rem;
+  text-align: center;
+  padding: 1.5rem 0.5rem;
 }
-
 
 /*-------------------------Premium Price Column-------------------------*/
-
-
 .price td {
-    font-size: 4rem;
-    font-weight: bold;
+  font-size: 4rem;
+  font-weight: bold;
 }
-
-.price sup{
-    font-size: 2rem;
+.price sup {
+  font-size: 2rem;
 }
-
 .price p {
-    margin-top:0;
-    font-size: 1rem;
-    margin-bottom:2rem;
+  margin-top: 0;
+  font-size: 1rem;
+  margin-bottom: 2rem;
 }
 
 .premium {
-    background-color: rgb(240 ,244, 241);
-    color:var(--primary-green-dark)
+  background-color: #f0f4f1;
+  color: #043a31;
 }
 
 .premium-top {
-    border-top-right-radius: 1rem;
-    border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
 }
 
 .premium-bottom {
-    border-bottom-left-radius:1rem;
-    border-bottom-right-radius: 1rem ;
-    margin-bottom: 1rem ;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  margin-bottom: 1rem;
 }
 
 .premium-btn {
-    color:#fff;
-    border:solid var(--primary-green-);
-    background-color:var(--primary-green-);
+  display: flex;
+  flex-wrap: nowrap;
+  min-width: 11rem;
+  color: #fff;
+  border: solid #066051;
+  background-color: #066051;
 }
 
 .premium-btn:hover {
-    background-color: var(--primary-green-lgt);
+  background-color: #09a38c;
 }
-
-
-
 
 /* -------------------------Table Footer-------------------------*/
-
-
 .uppercase {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
-
 .uppercase td:not(.table-buttons) {
-    padding-top: 3rem;
-    padding-bottom:0;
-    margin-bottom:0;
+  padding-top: 3rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .table-button:not(.premium-btn) {
-    display: inline-block;
-    min-width:10rem;
-    padding:.5rem 2rem;
-    background-color:var(--white);
-    color:var(--primary-green-)
+  display: inline-block;
+  min-width: 10rem;
+  padding: 0.5rem 2rem;
+  background-color: #fff;
+  color: #066051;
 }
 
-.table-button:hover{
-    text-decoration: underline;
+.table-button:hover {
+  text-decoration: underline;
 }
 
 .table-buttons {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
-
-
-
 
 /* - - - - - - - - - - - - - - - - - - - - - - -  Call to action banner in reusable classes above - - - - - - - - - - - - - - - - - - - */
-
 /* - - - - - - - - - - - - - - - - - - - - - - -  Footer in Reusable Classes above  - - - - - - - - - - - - - - - - - - - */
-
-
-
-
-
-
 /* - - - - - - - - - - - - - - - - - - - - - - -  Pricing Adaptive Media Queries   - - - - - - - - - - - - - - - - - - - */
+@media only screen and (min-width: 45rem) {
+  /*- - - - - - - - - - - Pricing Tablet Adaptive Styles - - - - - - - - - - - -*/
+  /* - - - - - - - - - - Pricing Banner - - - - - - - - - - -  */
+  .pricing-banner p {
+    font-size: 1.5rem;
+  }
 
-
-
-
-@media only screen and (min-width:45rem){ /*- - - - - - - - - - - Pricing Tablet Adaptive Styles - - - - - - - - - - - -*/
-
-
-
-/* - - - - - - - - - - Pricing Banner - - - - - - - - - - -  */
-
-    
-.pricing-banner p {
-        font-size: 1.5rem;
-}
-
-/*- - - - - - - - - - -Pricing Table- - - - - - - - - - -*/
-
-
-/*--------------Head-------*/
-
-
-thead th {
+  /*- - - - - - - - - - -Pricing Table- - - - - - - - - - -*/
+  /*--------------Head-------*/
+  thead th {
     font-size: 1.724rem;
-}
+  }
 
-
-/*-------------Body-----------*/
-
-
-tbody th {
+  /*-------------Body-----------*/
+  tbody th {
     font-size: 1.363rem;
     min-width: 12rem;
+  }
+
+  td {
+    padding: 1.5rem 2rem;
+  }
 }
-
-td {
-    padding:1.5rem 2rem;
-}
-
-
-}
-
-
-
-@media only screen and (min-width:60rem){ /*- - - - - - - - - - - Pricing Laptop Adaptive Styles - - - - - - - - - - - -*/
-
-
-
-/* - - - - - - - - - - Pricing Banner - - - - - - - - - - -  */
-
-
-.pricing-banner p {
+@media only screen and (min-width: 60rem) {
+  /*- - - - - - - - - - - Pricing Laptop Adaptive Styles - - - - - - - - - - - -*/
+  /* - - - - - - - - - - Pricing Banner - - - - - - - - - - -  */
+  .pricing-banner p {
     font-size: 1.95rem;
-}
+  }
 
+  /*- - - - - - - - - - -Pricing Table- - - - - - - - - - -*/
+  /*-------------------------Table Scroller-------------------------*/
+  .table-scroller {
+    overflow: hidden;
+  }
 
-/*- - - - - - - - - - -Pricing Table- - - - - - - - - - -*/
-
-
-/*-------------------------Table Scroller-------------------------*/
-
-
-.table-scroller {
-        overflow: hidden;
-}
-
-
-/*--------------------- Head-------------------*/
-
-
-thead th {
+  /*--------------------- Head-------------------*/
+  thead th {
     font-size: 1.924rem;
-}
+  }
 
-
-/*---------------------Body--------------------*/
-
-
-tbody th {
+  /*---------------------Body--------------------*/
+  tbody th {
     font-size: 1.363rem;
+  }
+
+  td {
+    padding: 1.5rem 4rem;
+  }
 }
-
-td {
-    padding:1.5rem 4rem;
-}
-
-}
-
-/* - - - - - - - - - - - - - - - - - - - - - - -Pricing Page Ends - - - - - - - - - - - - - - - - - - */
-
-
-
-
-/* - - - - - - - - - - - - - - - - - - - - - - -Sign-Up Page - - - - - - - - - - - - - - - - - - */
-
 /* - - - - - - - - - - - - - - - - - - - - - - -Header - - - - - - - - - - - - - - - - - - */
-
 .form-masthead .container {
-    padding:0;
+  padding: 0;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - -Main - - - - - - - - - - - - - - - - - - */
-
-
 .form-main {
-    background-image:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)) ,url(/images/banners/hockey-goalie.jpg);
-    display:inline-block;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/images/banners/hockey-goalie.jpg);
+  display: inline-block;
 }
 
 .sign-up-form .container {
-    align-items: center;
-    padding: 5.01rem 1rem;
-    text-align: left;
+  align-items: center;
+  padding: 5.01rem 1rem;
+  text-align: left;
 }
 
 form {
-    background-color: #fff;
-    border-radius: .5rem;
-    padding:.5rem 1.2rem 1.5rem 1.2rem;
-    min-width:18rem;
-    width:min(35rem,100%)
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.2rem 1.5rem 1.2rem;
+  min-width: 18rem;
+  width: min(35rem, 100%);
 }
-
-
 form h1 {
-    justify-self: flex-start;
-    text-transform: capitalize;
-    margin-bottom:.75rem;
-    margin-top: 1rem;;
+  justify-self: flex-start;
+  text-transform: capitalize;
+  margin-bottom: 0.75rem;
+  margin-top: 1rem;
 }
 
 fieldset {
-    margin:0;
-    display:flex;
-    flex-direction: column;
-    gap:.75rem;
-    align-items:flex-start;
-    border:none;
-    padding:0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: flex-start;
+  border: none;
+  padding: 0;
 }
 
 .fn-ln {
-    width:100%;
+  width: 100%;
 }
 
-input:not([type="checkbox"]) {
-    width:100%;
-    min-width: 16rem;
-    font-size: 1rem;
-    padding:.7rem 1.5rem;
-    border-radius: 1.75rem;
-    border:solid .0125rem rgb(190, 189, 189);
+input:not([type=checkbox]) {
+  width: 100%;
+  min-width: 16rem;
+  font-size: 1rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 1.75rem;
+  border: solid 0.0125rem #bebdbd;
 }
 
 .checkbox-div {
-    margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .form-btn {
-    width:8rem;
-    margin:.75rem 0rem;
-    background-color:#086b5c;
-    border:solid 1px #086b5c ;
+  width: 8rem;
+  margin: 0.75rem 0rem;
+  background-color: #086b5c;
+  border: solid 1px #086b5c;
 }
 
 .sign-up-form small {
-    font-size: smaller;
-    color:black;
+  font-size: smaller;
+  color: black;
 }
 
+@media only screen and (min-width: 45rem) {
+  /* - - - - - - - - - - - - - - - - - - - - - - -Main - - - - - - - - - - - - - - - - - - */
+  .fn-ln {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
 
+  .first-name {
+    justify-self: flex-start;
+  }
 
-@media only screen and (min-width:45rem) {
-    
-    
-/* - - - - - - - - - - - - - - - - - - - - - - -Main - - - - - - - - - - - - - - - - - - */
-
-
-.fn-ln {
-        display:grid;
-        grid-template-columns: 1fr 1fr;
-    gap:1rem;
-}
-
-.first-name {
-    justify-self:flex-start ;
-}
-
-.last-name {
+  .last-name {
     grid-column: 2/3;
     grid-row: 1/2;
+  }
+
+  /* - - - - - - - - - - - - - - - - - - - - - - Footer- - - - - - - - - - - - - - - - - - */
+  .form-footer .container {
+    padding: 1.5rem 0rem;
+  }
 }
-
-
-/* - - - - - - - - - - - - - - - - - - - - - - Footer- - - - - - - - - - - - - - - - - - */
-
-
-.form-footer .container {
-    padding:1.5rem 0rem;;
+@media only screen and (min-width: 60rem) {
+  /* - - - - - - - - - - - - - - - - - - - - - - -Header - - - - - - - - - - - - - - - - - - */
+  .form-masthead {
+    margin: 1rem auto;
+  }
 }
-
-
-}
-
-@media only screen and (min-width:60rem){
-
-
-/* - - - - - - - - - - - - - - - - - - - - - - -Header - - - - - - - - - - - - - - - - - - */
-
-
-.form-masthead {
-    margin:1rem auto;
-}
-
-}
-
 /* - - - - - - - - - - - - - - - - - - - - - - -Sign-Up Page Ends - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - -     Banner      - - - - - - - - - - - - - - - - - - - */
+/* -----------------------Platform tour banner "next level design"--------------- */
+.platform-tour-page .platform-tour {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.45)), url(/Images/banners/hero-platform.jpg);
+  text-align: center;
+}
+
+#platform-tour-hero {
+  color: #fff;
+}
+
+.platform-tour {
+  margin-bottom: 3rem;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - -      Polished + Platform    - - - - - - - - - - - - - - - - - - - */
+.polished-platform {
+  padding: 0rem 1.5rem;
+  margin-bottom: 6rem;
+}
+.polished-platform .container {
+  color: black;
+}
+
+.polished-header {
+  text-align: left;
+}
+
+.polished-content {
+  text-align: left;
+  margin-top: 0;
+}
+
+.polished-platform img {
+  margin-bottom: 1rem;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - -  Call to action banner in reusable classes above - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - -  Footer in Reusable Classes above  - - - - - - - - - - - - - - - - - - - */
+@media only screen and (min-width: 30em) {
+  /*- - - - - - - Large mobile platform tour - - - - - - - */
+  /* - - - - - - - - - - - - - - - - - - - - - - -      Banner      - - - - - - - - - - - - - - - - - - - */
+  .platform-tour-page .platform-tour {
+    padding: 3.5rem 1rem;
+  }
+
+  /* - - - - - - - - - - - - - - - - - - - - - - -      Main      - - - - - - - - - - - - - - - - - - - */
+  /* ---------------large mobile adaptive polished  + grid container------------------ */
+  .polished-grid-container img {
+    width: min(25rem, 100%);
+  }
+}
+@media only screen and (min-width: 45em) {
+  /*- - - - - - - - - - Tablet Adaptive Platform Tour - - - - - - */
+  /* - - - - - - - - - - - - - - - - - - - - - - -      Main      - - - - - - - - - - - - - - - - - - - */
+  /* ---------------tablet polished platform grid container------------------ */
+  .polished-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 5rem 1fr;
+    grid-template-areas: "cont . img" "p . img";
+    width: min(55rem, 100%);
+    justify-self: center;
+    margin-bottom: 6rem;
+  }
+  .polished-grid-container img {
+    grid-area: img;
+    width: 100%;
+  }
+
+  .polished-grid-container:nth-child(2n) {
+    grid-template-areas: "img . cont" "img . p";
+  }
+
+  .polished-header {
+    grid-area: cont;
+    align-self: flex-end;
+  }
+
+  .polished-content {
+    grid-area: p;
+  }
+}
+@media only screen and (min-width: 60em) {
+  /*- - - - - - - - - - - - Laptop Adaptive Platform Tour - - - - - - - - - - - */
+  /* - - - - - - - - - - - - - - - - - - - - - - -      Banner      - - - - - - - - - - - - - - - - - - - */
+  .platform-tour-page .platform-tour {
+    padding: 5.25rem 2rem;
+  }
+}
+html {
+  font-size: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 1rem 0 1.38rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+h1 {
+  padding-top: 0%;
+  margin-top: 0%;
+  margin-bottom: 0.5rem;
+  font-size: 1.802rem;
+  text-align: center;
+  color: #066051;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.602rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.424rem;
+  font-weight: 900;
+}
+
+h4 {
+  font-size: 1.266rem;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+h5 {
+  font-size: 1.125rem;
+  border-bottom: solid 0.045rem #e9eceb;
+  color: #066051;
+  font-weight: 700;
+}
+
+h6 {
+  font-size: 1.3rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-size: 1.3rem;
+  text-transform: none;
+  font-weight: normal;
+  font-family: "Ubuntu", sans-serif;
+}
+
+a {
+  color: #066051;
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+small, .text_small {
+  font-size: 0.889rem;
+}
+
+@media only screen and (min-width: 45em) {
+  /*- - - - - - - - - Tablet Size Polished adaptive styles - - - - - - - - - - */
+  /* - - - - - - - - - - - - - - - - - - - - - - -   Tablet   Type Scale     - - - - - - - - - - - - - - - - - - - */
+  html {
+    font-size: 100%;
+  }
+
+  h1 {
+    font-size: 2.488rem;
+  }
+
+  h2 {
+    font-size: 2.074rem;
+  }
+
+  h3 {
+    font-size: 1.728rem;
+  }
+
+  h4 {
+    font-size: 1.44rem;
+  }
+
+  h5 {
+    font-size: 1.125rem;
+  }
+
+  h6, p {
+    font-size: 1rem;
+  }
+
+  small, .text_small {
+    font-size: 0.833rem;
+  }
+}
+@media only screen and (min-width: 60em) {
+  /*- - - - - - - - - - - - - Laptop Adaptive styles - - - - - - - - - - */
+  /* - - - - - - - - - - - - - - - - - - - - - - -     Laptop Type Scale     - - - - - - - - - - - - - - - - - - - */
+  html {
+    font-size: 100%;
+  }
+
+  h1 {
+    font-size: 3.052rem;
+  }
+
+  h2 {
+    font-size: 2.441rem;
+  }
+
+  h3 {
+    font-size: 1.953rem;
+  }
+
+  h4 {
+    font-size: 1.563rem;
+  }
+
+  h5 {
+    font-size: 1.4rem;
+  }
+
+  h6, p {
+    font-size: 1.3rem;
+  }
+
+  small {
+    font-size: 0.8rem;
+  }
+}
+/* ----------------------------------------imports go above--------------------------------- */
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+body {
+  background: white;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000000;
+  margin-top: 0%;
+  margin: 0%;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */

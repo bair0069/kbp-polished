@@ -1,0 +1,33 @@
+@import "Patterns/patterns";
+@import "Pages/pages";
+@import "Utilities/utilities";
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+/* ----------------------------------------imports go above--------------------------------- */
+
+
+html {
+    box-sizing:border-box;
+}
+
+*,*::after,*::before {
+    box-sizing:inherit;
+}
+
+body {
+    background: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    margin-top:0%;
+    margin:0%;
+}
+
+img {
+    max-width:100%;
+}
+
+

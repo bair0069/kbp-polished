@@ -1,0 +1,136 @@
+
+/* - - - - - - - - - - - - - - - - - - - - - - -     Banner      - - - - - - - - - - - - - - - - - - - */
+
+
+/* -----------------------Platform tour banner "next level design"--------------- */
+
+
+.platform-tour-page .platform-tour {
+    background-image:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.45)), url(/Images/banners/hero-platform.jpg);
+    text-align:center;
+}
+
+#platform-tour-hero {
+    color:#fff
+}
+
+.platform-tour {
+    margin-bottom:3rem;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - -      Polished + Platform    - - - - - - - - - - - - - - - - - - - */
+
+
+
+.polished-platform {
+    
+    padding:0rem 1.5rem;
+    margin-bottom: 6rem;
+.container {
+    color:black;
+}
+}
+
+.polished-header {
+    text-align:left;
+}
+
+.polished-content {
+    text-align: left;
+    margin-top:0;
+}
+
+.polished-platform img {
+    margin-bottom:1rem;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - -  Call to action banner in reusable classes above - - - - - - - - - - - - - - - - - - - */
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - -  Footer in Reusable Classes above  - - - - - - - - - - - - - - - - - - - */
+
+
+
+@media only screen and (min-width:30em) { /*- - - - - - - Large mobile platform tour - - - - - - - */
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - -      Banner      - - - - - - - - - - - - - - - - - - - */
+
+
+.platform-tour-page .platform-tour {
+    padding:3.5rem 1rem;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - -      Main      - - - - - - - - - - - - - - - - - - - */
+
+
+/* ---------------large mobile adaptive polished  + grid container------------------ */
+
+
+.polished-grid-container img {
+    width:min(25rem,100%);
+}
+
+}
+
+
+@media only screen and (min-width:45em) { /*- - - - - - - - - - Tablet Adaptive Platform Tour - - - - - - */
+
+
+    /* - - - - - - - - - - - - - - - - - - - - - - -      Main      - - - - - - - - - - - - - - - - - - - */
+
+
+
+/* ---------------tablet polished platform grid container------------------ */
+
+
+.polished-grid-container {
+    display:grid;
+    grid-template-columns: 1fr 5rem 1fr;
+    grid-template-areas:
+    "cont . img"
+    "p . img";
+    width:min(55rem,100%);
+    justify-self:center;
+    margin-bottom:6rem;
+
+
+
+img {
+    grid-area:img;
+    width:100%;
+}
+
+}
+
+.polished-grid-container:nth-child(2n) {
+    grid-template-areas:
+    "img . cont"
+    "img . p";
+}
+.polished-header {
+    grid-area:cont;
+    align-self: flex-end;
+}
+
+.polished-content {
+    grid-area:p;
+}
+
+
+}
+
+
+@media only screen and (min-width:60em) { /*- - - - - - - - - - - - Laptop Adaptive Platform Tour - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - -      Banner      - - - - - - - - - - - - - - - - - - - */
+
+
+
+.platform-tour-page .platform-tour{
+    padding: 5.25rem 2rem;
+}
+
+}
+

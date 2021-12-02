@@ -1,0 +1,90 @@
+
+
+/* ---------------light-green  sign-up button------------ */
+
+
+.btn-lgt-green {
+    border-color:#09a38c;
+    color:$primary-green-lgt;
+}
+
+.btn-lgt-green:hover,
+.btn-lgt-green:focus {
+    background-color:#f3f6f5;
+}
+
+.btn-lgt-green:active {
+    background-color: rgb(165, 165, 165);
+    border:solid #f3f6f5;
+    color:#f3f6f5;
+}
+
+
+/* --------------primary -green #066051 sign up button---------------- */
+
+
+.btn-pri-green {
+    border:#066051;
+}
+
+.btn-pri-green:hover,
+.btn-pri-green:focus {
+    background-color:#f3f6f5;
+}
+
+.btn-pri-green:active {
+    background-color: rgb(165, 165, 165);
+    border:#f3f6f5;
+    color:#f3f6f5
+}
+
+
+
+/* -------------------------sign up button -------------------- */
+
+
+.sign-up-btn {
+    padding:.75rem 3rem .75rem 3rem;
+    text-decoration:none;
+    text-align:center;
+    border-radius:2rem;
+    border-width:.5px;
+    font-size:1.35rem;
+    font-family:"Ubuntu" ,sans-serif;
+    border:solid;
+}
+
+
+/* ---------------------------small sign up button---------------- */
+
+
+.small-btn {
+    margin-top: 0px;
+    padding:.45rem 1.85rem .45rem 1.85rem;
+    font-weight: lighter;
+    font-size: 1rem;
+    min-width:8rem;
+}
+
+
+/* ------------------- white sign-up button  #f3f6f5-------------------------------- */
+
+
+.btn-white {
+    border:#f3f6f5 solid;
+    color:#f3f6f5; 
+}
+
+.btn-white:hover,
+.btn-white:focus {
+    background-color:#f3f6f5;
+    color:#09a38c;
+    border:solid #09a38c;
+}
+
+.btn-white:active {
+    background-color:rgb(165, 165, 165) ;
+    color:#f3f6f5;
+    border:solid #f3f6f5;
+}
+

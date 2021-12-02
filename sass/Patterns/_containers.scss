@@ -1,0 +1,15 @@
+/* ------------------------------          Containers          ---------------------------- */
+
+
+
+
+.container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:min(80rem,100%);
+    margin:0 auto;
+    text-align:center;
+    
+}
+
