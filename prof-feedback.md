@@ -118,3 +118,11 @@ Total: 4.75/5
 }
 ```
 - You also forgot to apply the animation to the button!
+
+## Week 13 ----------------------
+
+Code Quality: 3/3
+File Organization & Commits: 1.75/2
+Total: 4.75/5
+
+You folders should all be lower case. `css` not `CSS`. Different OSs treat capitalized vs non-capitalized differently, so it's best to just always use lower case.
