@@ -324,7 +324,7 @@ small, .text_small {
 
 /*-----------------------call to action banner-----------------------------*/
 .call-to-action {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/images/banners/soccer-banner-bw.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(./Images/banners/soccer-banner-bw.jpg);
 }
 
 @media only screen and (min-width: 60em) {
@@ -670,7 +670,7 @@ a:hover {
 }
 /* - - - - - - - - - - - - - - - - - - - - - - -  Hero-Banner   - - - - - - - - - - - - - - - - - - - */
 .hero-banner {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/banners/hero-home.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./Images/banners/hero-home.jpg);
 }
 .hero-banner .container {
   padding: 9rem 2rem;
@@ -953,7 +953,7 @@ td {
 
 /* - - - - - - - - - - - - - - - - - - - - - - -Main - - - - - - - - - - - - - - - - - - */
 .form-main {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/images/banners/hockey-goalie.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(./Images/banners/hockey-goalie.jpg);
   display: inline-block;
 }
 
@@ -1048,7 +1048,7 @@ input:not([type=checkbox]) {
 /* - - - - - - - - - - - - - - - - - - - - - - -     Banner      - - - - - - - - - - - - - - - - - - - */
 /* -----------------------Platform tour banner "next level design"--------------- */
 .platform-tour-page .platform-tour {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.45)), url(/Images/banners/hero-platform.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.45)), url(./Images/banners/hero-platform.jpg);
   text-align: center;
 }
 
