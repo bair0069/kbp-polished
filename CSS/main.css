@@ -324,7 +324,7 @@ small, .text_small {
 
 /*-----------------------call to action banner-----------------------------*/
 .call-to-action {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(./Images/banners/soccer-banner-bw.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../Images/banners/soccer-banner-bw.jpg);
 }
 
 @media only screen and (min-width: 60em) {
@@ -670,7 +670,7 @@ a:hover {
 }
 /* - - - - - - - - - - - - - - - - - - - - - - -  Hero-Banner   - - - - - - - - - - - - - - - - - - - */
 .hero-banner {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./Images/banners/hero-home.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Images/banners/hero-home.jpg);
 }
 .hero-banner .container {
   padding: 9rem 2rem;
