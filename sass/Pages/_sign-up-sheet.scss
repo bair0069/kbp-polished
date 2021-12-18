@@ -69,6 +69,11 @@ input:not([type="checkbox"]) {
     margin:.75rem 0rem;
     background-color:#086b5c;
     border:solid 1px #086b5c ;
+    color:#fff;
+    &:hover{
+        background-color:#043d35;
+        cursor:pointer;
+    }
 }
 
 .sign-up-form small {
